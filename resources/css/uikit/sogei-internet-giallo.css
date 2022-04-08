@@ -1,0 +1,230 @@
+/*!
+ * Sogei UI Kit 4
+ * author: dgalloppa
+ */
+
+/* CSS per importare lo stile comune */
+@import url("./sogei-internet-base.css");
+
+/* PALETTE
+ * secondary:	#f2a900
+ * viola:		#87189d #6e0084
+ */
+
+/* COLOR */
+.icon-secondary,
+.text-secondary {
+	color: #f2a900 !important;
+}
+.bg-secondary {
+	background-color: #f2a900 !important;
+}
+.border-secondary {
+	border-color: #f2a900 !important;
+}
+
+/* HEADER */
+#page-header .btn-primary.btn-alt:active,
+#page-header .btn-primary.btn-alt:hover,
+#page-header .btn-primary.btn-alt:active:hover {
+	background-color: #f2a900;
+	border-color: #f2a900;
+	color: #25303b;
+}
+
+/* FOOTER */
+#page-footer .btn-primary.btn-alt:hover {
+	background-color: #f2a900;
+	border-color: #f2a900;
+	color: #25303b;
+}
+#page-footer hr {
+	border-color: #f2a900;
+}
+
+/* MENU TOP */
+#btn-accedi,
+.btn-accedi {
+	background-color: #f2a900;
+	color: #25303b;
+}
+.megamenu-title {
+	border-bottom-color: #f2a900;
+}
+@media (min-width: 768px) {
+	.navbar-expand-md .navbar-nav .nav-link:focus,
+	.navbar-expand-md .navbar-nav .nav-link:hover,
+	.navbar-expand-md .navbar-nav .nav-link.active,
+	.navbar-expand-md .navbar-nav .nav-link.active:focus,
+	.navbar-expand-md .navbar-nav .nav-link.active:hover {
+		border-bottom-color: #f2a900;
+	}
+	.navbar-expand-md .active-reverse .nav-link.active,
+	.navbar-expand-md .active-reverse .nav-link.active:focus,
+	.navbar-expand-md .active-reverse .nav-link.active:hover {
+		border-top: .25rem solid #f2a900;
+		color: #25303b;
+		margin-top: -.25rem;
+	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link:focus,
+	.navbar-expand-lg .navbar-nav .nav-link:hover,
+	.navbar-expand-lg .navbar-nav .nav-link.active,
+	.navbar-expand-lg .navbar-nav .nav-link.active:focus,
+	.navbar-expand-lg .navbar-nav .nav-link.active:hover {
+		border-bottom-color: #f2a900;
+	}
+	.navbar-expand-lg .active-reverse .nav-link.active,
+	.navbar-expand-lg .active-reverse .nav-link.active:focus,
+	.navbar-expand-lg .active-reverse .nav-link.active:hover {
+		border-top: .25rem solid #f2a900;
+		color: #25303b;
+		margin-top: -.25rem;
+	}
+}
+
+/* MENU LEFT */
+#menu-left.navbar-dark .nav-link:focus,
+#menu-left.navbar-dark .nav-link:hover,
+#menu-left.navbar-light .nav-link:focus,
+#menu-left.navbar-light .nav-link:hover {
+	background-color: #f2a900;
+	color: #25303b;
+}
+
+/* ICONS */
+.fa-title {
+	background-color: #f2a900;
+}
+
+/* TITLE */
+h1.underline, h2.underline, h3.underline, h4.underline {
+	border-bottom-color: #f2a900;
+}
+
+/* LINK */
+a {
+	color: #87189d;
+}
+a:hover,
+a:focus {
+	color: #6e0084;
+}
+
+/* SPINNER */
+.spinner {
+	color: #f2a900;
+}
+
+/* CARD */
+.card-info {
+	border-color: #f2a900;
+}
+.card-info > .card-header {
+	background-color: #f2a900;
+	color: #19191a;
+}
+.card-simple {
+	border-color: #f2a900;
+}
+
+/* TABS */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link.active:hover {
+	border-top-color: #f2a900;
+	color: #25303b;
+}
+.nav-tabs-reverse .nav-link.active,
+.nav-tabs-reverse .nav-link.active:focus,
+.nav-tabs-reverse .nav-link.active:hover {
+	border-bottom-color: #f2a900;
+	color: #25303b;
+}
+.nav-tabs-vertical .nav-link.active,
+.nav-tabs-vertical .nav-link.active:focus,
+.nav-tabs-vertical .nav-link.active:hover {
+	border-right-color: #f2a900;
+	color: #25303b;
+}
+
+/* PAGINATION */
+.page-link {
+	color: #87189d;
+}
+.page-link:focus,
+.page-link:hover {
+	color: #6e0084;
+}
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover {
+	background-color: #87189d;
+	border-color: #87189d;
+}
+
+/* ENTRYPOINT */
+.btn-entrypoint.btn-info:not(:hover) {
+	background-color: #f2a900;
+	border-color: #f2a900;
+	color: #25303b;
+}
+.btn-entrypoint.btn-info:active,
+.btn-entrypoint.btn-info:hover,
+.btn-entrypoint.btn-info:active:hover {
+	background-color: #fff;
+	border-color: #f2a900;
+	color: #25303b;
+}
+
+/* PROGRESS BAR */
+.progress-bar-link:focus,
+.progress-bar-link:hover {
+	background-color: #f2a900;
+	color: #19191a;
+}
+
+/* WIZARD */
+.wizard-dot,
+.wizard .progress-bar,
+.wizard-step-doing > .wizard-dot::after {
+	background-color: #f2a900;
+}
+
+/* TIMELINE */
+.timeline-item-doing::after {
+	border-color: #f2a900;
+}
+
+/* BUTTON */
+.btn-link {
+	color: #87189d;
+}
+.btn-link:hover {
+	color: #6e0084;
+}
+a.btn-default {
+	border-color: #87189d;
+	color: #87189d;
+}
+a.btn-default:active,
+a.btn-default:hover,
+a.btn-default:active:hover {
+	border-color: #6e0084;
+	color: #6e0084;
+}
+
+/* CAROUSEL */
+.carousel-indicators .active {
+	background-color: #f2a900;
+}
+
+/* LOGIN */
+#login-form #btn-accedi,
+.login-form #btn-accedi,
+#login-form .btn-accedi,
+.login-form .btn-accedi {
+	background-color: #f2a900;
+	color: #25303b;
+}

@@ -1,0 +1,305 @@
+/*!
+ * Sogei UI Kit 4
+ * author: dgalloppa
+ */
+
+/* PALETTE
+ * primary:			#06c rgb(0,102,204)
+ * secondary:		#0bd9d2
+ * section-primary:	#0073e6
+ */
+
+/* COLOR */
+.icon-primary,
+.text-primary {
+	color: #06c !important;
+}
+.bg-primary {
+	background-color: #06c !important;
+}
+.border-primary {
+	border-color: #06c !important;
+}
+.icon-secondary,
+.text-secondary {
+	color: #0bd9d2 !important;
+}
+.bg-secondary {
+	background-color: #0bd9d2 !important;
+}
+.border-secondary {
+	border-color: #0bd9d2 !important;
+}
+
+/* MENU TOP */
+.dropdown-menu {
+	border-radius: 0;
+}
+#btn-accedi,
+.btn-accedi {
+	background-color: #17324d;
+	color: #fff;
+}
+
+/* MENU LEFT */
+#menu-left.navbar-light {
+	border-color: #06c;
+}
+#menu-left.navbar-dark,
+#menu-left-title,
+#menu-left .nav-divider {
+	background-color: #06c;
+}
+#menu-left.navbar-light.items-bordered .nav-item {
+	border-top: 1px solid rgba(0,102,204,.2);
+}
+#menu-left.navbar-light .nav-item .nav-item {
+	background-color: rgba(0,102,204,.1);
+}
+#menu-left.navbar-light .nav-link {
+	color: #06c;
+}
+#menu-left.navbar-light .nav-link:focus,
+#menu-left.navbar-light .nav-link:hover {
+	background-color: rgba(0,102,204,.1);
+}
+
+/* ICONS */
+.fa-title {
+	background-color: #0bd9d2;
+}
+
+/* TITLE */
+h1.underline, h2.underline, h3.underline, h4.underline {
+	border-bottom-color: #06c;
+}
+
+/* SPINNER */
+.spinner {
+	color: #06c;
+}
+
+/* BADGE, MESSAGE, NOTIFICATION */
+.alert {
+	border-radius: 0;
+}
+.badge-primary {
+	background-color: #06c;
+}
+.badge-primary-alt {
+	border-color: #06c;
+	color: #06c;
+}
+
+/* CARD */
+.card,
+.card-header,
+.card-footer {
+	border-radius: 0 !important;
+}
+.card-primary {
+	border-color: #06c;
+}
+.card-primary > .card-header {
+	background-color: #06c;
+}
+.card-info {
+	border-color: #0bd9d2;
+}
+.card-info > .card-header {
+	background-color: #0bd9d2;
+}
+.card-simple {
+	border-color: #0bd9d2;
+}
+
+/* TABS */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link.active:hover {
+	border-top-color: #06c;
+	color: #06c;
+}
+.nav-tabs-reverse .nav-link.active,
+.nav-tabs-reverse .nav-link.active:focus,
+.nav-tabs-reverse .nav-link.active:hover {
+	border-bottom-color: #06c;
+	color: #06c;
+}
+.nav-tabs-vertical .nav-link.active,
+.nav-tabs-vertical .nav-link.active:focus,
+.nav-tabs-vertical .nav-link.active:hover {
+	border-right-color: #06c;
+	color: #06c;
+}
+
+/* TABLE */
+.table-header > thead > tr > th {
+	background-color: #323333;
+	color: #fff;
+}
+.table:not(.table-bordered),
+.table:not(.table-bordered) > thead > tr > th,
+.table-adaptive > .table-header > tbody > tr > th {
+	border-color: #323333;
+}
+caption {
+	color: #323333;
+}
+
+/* PAGINATION */
+.page-link {
+	background-color: transparent;
+	border-color: transparent;
+	color: #5c6f82;
+}
+.page-link:focus,
+.page-link:hover {
+	background-color: transparent;
+	border-color: transparent;
+}
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover {
+	background-color: transparent;
+	border-color: #06c;
+	color: #06c;
+}
+
+/* MODAL */
+.modal-content {
+	border-radius: 0;
+}
+
+/* LIST GROUP */
+.list-group-item {
+	border-radius: 0 !important;
+}
+
+/* ENTRYPOINT */
+.btn-entrypoint.btn-info:not(:hover) {
+	background-color: #0bd9d2;
+	border-color: #0bd9d2;
+	color: #19191a;
+}
+.btn-entrypoint.btn-info:active,
+.btn-entrypoint.btn-info:hover,
+.btn-entrypoint.btn-info:active:hover {
+	background-color: #fff;
+	border-color: #0bd9d2;
+	color: #19191a;
+}
+
+/* PROGRESS BAR */
+.progress-bar-done {
+	background-color: #0bd9d2;
+}
+.progress-bar-doing {
+	background-color: #06c;
+}
+
+/* WIZARD */
+.wizard-dot,
+.wizard .progress-bar,
+.wizard-step-doing > .wizard-dot::after {
+	background-color: #06c;
+}
+
+/* TIMELINE */
+.timeline::after {
+	background-color: #06c;
+}
+.timeline-item-done::before,
+.timeline-item-doing::before {
+	border-right-color: #06c;
+}
+.timeline-item-done::after {
+	border-color: #06c;
+}
+.timeline-item-doing::after {
+	background-color: #06c;
+	border-color: #0bd9d2;
+}
+.timeline-item-done > .timeline-icon,
+.timeline-item-todo > .timeline-icon {
+	color: #06c;
+}
+.timeline-item-done > .timeline-label {
+	border-color: #06c;
+}
+.timeline-item-doing > .timeline-label {
+	background-color: #06c;
+	border-color: #06c;
+}
+@media (min-width: 768px) {
+	.timeline-item-done.timeline-item-left::before,
+	.timeline-item-doing.timeline-item-left::before {
+		border-left-color: #06c;
+	}
+}
+
+/* UTILITY */
+.section-primary {
+	background-color: #06c;
+	background-image: linear-gradient(to right, #06c, #0073e6);
+}
+
+/* FORM */
+label,
+.label,
+legend,
+.input-group-text {
+	color: #5c6f82;
+}
+fieldset,
+.form-control,
+.custom-select,
+.custom-file-label,
+.custom-file-label::after,
+.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text,
+.form-control-sm:not(textarea),
+.custom-select-sm,
+.input-group-sm > .form-control,
+.input-group-sm > .custom-select,
+.input-group-sm > .input-group-append > .btn,
+.input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-prepend > .input-group-text,
+.form-control-lg:not(textarea),
+.custom-select-lg,
+.input-group-lg > .form-control,
+.input-group-lg > .custom-select,
+.input-group-lg > .input-group-append > .btn,
+.input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-prepend > .input-group-text {
+	border-radius: 0;
+}
+
+/* POPOVER */
+.popover {
+	border-radius: 0;
+}
+
+/* DATEPICKER */
+.datepicker.dropdown-menu {
+	border-radius: 0;
+}
+
+/* CARD CON IMMAGINI */
+.card-img-top {
+	border-radius: 0;
+}
+@media (min-width: 576px) {
+	.card-horizontal .card-img-top {
+		border-radius: 0;
+	}
+}
+
+/* CAROUSEL */
+.carousel-indicators .active {
+	background-color: #06c;
+}

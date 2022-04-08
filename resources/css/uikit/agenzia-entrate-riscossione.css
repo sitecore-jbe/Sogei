@@ -1,0 +1,79 @@
+/*!
+ * Sogei UI Kit 4
+ * author: dgalloppa
+ */
+
+/* CSS per importare lo stile comune */
+@import url("./agenzia-entrate-base.css");
+
+/* HEADER */
+#page-header {
+	background-color: #f0f1f3;
+	border-bottom-color: #f0f1f3;
+	color: #004080;
+}
+#page-header .btn-rounded .btn-primary.btn-alt:not(:hover) {
+	background-color: #eb641f;
+	border-color: #eb641f;
+}
+
+/* MENU TOP */
+.navbar {
+	background-color: #f0f1f3;
+}
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active:focus,
+.navbar-nav .nav-link.active:hover {
+	color: #19191a;
+}
+.navbar-brand,
+.navbar .navbar-toggler {
+	color: #004080;
+}
+#menu-top .dropdown-item,
+#menu-top .dropdown-item:focus,
+#menu-top .dropdown-item:hover,
+#menu-top .dropdown-item.active,
+#menu-top .dropdown-item:active {
+	color: #19191a;
+}
+#btn-accedi,
+.btn-accedi {
+	background-color: #06c;
+	color: #fff;
+}
+@media (min-width: 768px) {
+	.navbar-expand-md .navbar-nav .nav-link:focus,
+	.navbar-expand-md .navbar-nav .nav-link:hover,
+	.navbar-expand-md .navbar-nav .nav-link.active,
+	.navbar-expand-md .navbar-nav .nav-link.active:focus,
+	.navbar-expand-md .navbar-nav .nav-link.active:hover {
+		border-bottom-color: #06c;
+	}
+	.navbar-expand-md .active-reverse .nav-link.active,
+	.navbar-expand-md .active-reverse .nav-link.active:focus,
+	.navbar-expand-md .active-reverse .nav-link.active:hover {
+		border-top: .25rem solid #06c;
+		color: #19191a;
+		margin-top: -.25rem;
+	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link:focus,
+	.navbar-expand-lg .navbar-nav .nav-link:hover,
+	.navbar-expand-lg .navbar-nav .nav-link.active,
+	.navbar-expand-lg .navbar-nav .nav-link.active:focus,
+	.navbar-expand-lg .navbar-nav .nav-link.active:hover {
+		border-bottom-color: #06c;
+	}
+	.navbar-expand-lg .active-reverse .nav-link.active,
+	.navbar-expand-lg .active-reverse .nav-link.active:focus,
+	.navbar-expand-lg .active-reverse .nav-link.active:hover {
+		border-top: .25rem solid #06c;
+		color: #19191a;
+		margin-top: -.25rem;
+	}
+}

@@ -1,0 +1,141 @@
+/*!
+ * Sogei UI Kit 4
+ * author: dgalloppa
+ */
+
+/* CSS per importare lo stile comune */
+@import url("./it-light.css");
+
+/* PALETTE
+ * secondary:		#cadada
+ * arancio:			#e8986a
+ * azzurro:			#1895ce
+ * giallo:			#ffd250
+ * verde-chiaro:	#83bb32
+ * verde-scuro:		#009742
+ */
+
+/* COLOR */
+.icon-secondary,
+.text-secondary {
+	color: #cadada !important;
+}
+.bg-secondary {
+	background-color: #cadada !important;
+}
+.border-secondary {
+	border-color: #cadada !important;
+}
+.icon-arancio,
+.text-arancio {
+	color: #e8986a !important;
+}
+.bg-arancio {
+	background-color: #e8986a !important;
+}
+.border-arancio {
+	border-color: #e8986a !important;
+}
+.icon-azzurro,
+.text-azzurro {
+	color: #1895ce !important;
+}
+.bg-azzurro {
+	background-color: #1895ce !important;
+}
+.border-azzurro {
+	border-color: #1895ce !important;
+}
+.icon-giallo,
+.text-giallo {
+	color: #ffd250 !important;
+}
+.bg-giallo {
+	background-color: #ffd250 !important;
+}
+.border-giallo {
+	border-color: #ffd250 !important;
+}
+.icon-verde-chiaro,
+.text-verde-chiaro {
+	color: #83bb32 !important;
+}
+.bg-verde-chiaro {
+	background-color: #83bb32 !important;
+}
+.border-verde-chiaro {
+	border-color: #83bb32 !important;
+}
+.icon-verde-scuro,
+.text-verde-scuro {
+	color: #009742 !important;
+}
+.bg-verde-scuro {
+	background-color: #009742 !important;
+}
+.border-verde-scuro {
+	border-color: #009742 !important;
+}
+
+/* HEADER */
+#page-header {
+	background-color: #fff;
+	border-bottom-color: rgba(0,0,0,.1);
+	color: #19191a;
+}
+#page-header .navbar-toggler {
+	color: #19191a;
+}
+#btn-accedi,
+.btn-accedi {
+	background-color: #06c;
+	color: #fff;
+}
+
+/* ICONS */
+.fa-title {
+	background-color: #cadada;
+}
+
+/* CARD */
+.card-info {
+	border-color: #cadada;
+}
+.card-info > .card-header {
+	background-color: #cadada;
+}
+.card-simple {
+	border-color: #cadada;
+}
+
+/* ENTRYPOINT */
+.btn-entrypoint.btn-info:not(:hover) {
+	background-color: #cadada;
+	border-color: #cadada;
+	color: #19191a;
+}
+.btn-entrypoint.btn-info:active,
+.btn-entrypoint.btn-info:hover,
+.btn-entrypoint.btn-info:active:hover {
+	background-color: #fff;
+	border-color: #cadada;
+	color: #19191a;
+}
+
+/* PROGRESS BAR */
+.progress-bar-done {
+	background-color: #cadada;
+}
+.progress-bar-doing {
+	background-color: #06c;
+}
+
+/* TIMELINE */
+.timeline-item-doing::after {
+	border-color: #cadada;
+}
+
+/* LOGIN */
+#full-page #page-footer {
+	color: #19191a;
+}

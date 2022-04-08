@@ -1,0 +1,77 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-calendar">Mostra il codice</a>
+<div id="src-calendar" class="collapse">
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-calendar-html code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-calendar-html" class="mb-1">
+<xmp>
+<div class="row">
+	<div class="col-12 col-md-6">
+		<div id="example-calendar" class="calendar" aria-hidden="true"></div>
+	</div>
+	<div class="col-12 col-md-6">
+		<div id="example-calendar-content" class="mb-5">
+			Contenuto
+		</div>
+		<button type="button" class="btn btn-default mr-3" title="Mese precedente" onclick="changeMonth('prev')"
+			aria-controls="example-calendar-content">
+			<i class="fas fa-chevron-left fa-lg"></i>
+			<span class="sr-only">Mese precedente</span>
+		</button>
+		<button type="button" class="btn btn-default" title="Mese successivo" onclick="changeMonth('next')"
+			aria-controls="example-calendar-content">
+			<span class="sr-only">Mese successivo</span>
+			<i class="fas fa-chevron-right fa-lg"></i>
+		</button>
+	</div>
+</div>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione Calendar:
+	<a href="https://bootstrap-datepicker.readthedocs.io/en/stable/" target="_blank" class="external-link">
+		documentazione completa<span class="sr-only">: apre una nuova finestra</span>
+	</a>
+</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-calendar-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-calendar-js">
+<xmp>
+// Variabile condivisa tra l'oggetto Calendar e la funzione esterna
+var myCalendar = new Date();
+
+// Configurazione Calendar ed evento 'changeMonth'
+$('#example-calendar').datepicker({
+	daysOfWeekDisabled: [0,1,2,3,4,5,6],
+	daysOfWeekHighlighted: [0,6],
+	language: 'it',
+	maxViewMode: 2,
+	templates: {
+		leftArrow: '<i class="fas fa-chevron-left" title="Mese precedente"></i>',
+		rightArrow: '<i class="fas fa-chevron-right" title="Mese successivo"></i>'
+	},
+	todayHighlight: true
+}).on('changeMonth', function(e) {
+   	myCalendar = e.date;
+	setTimeout(function() {
+   		// setCalendarContent();
+   	}, 100);
+});
+// setCalendarContent();
+
+// Funzione esterna changeMonth() per il cambio del mese con i bottoni
+function changeMonth(month) {
+	switch (month) {
+	case 'prev':
+		myCalendar.setMonth(myCalendar.getMonth()-1);
+		break;
+	case 'next':
+		myCalendar.setMonth(myCalendar.getMonth()+1);
+		break;
+	}
+	$('#example-calendar').datepicker('update', myCalendar);
+	// setCalendarContent();
+}
+</xmp>
+</pre>
+</div>

@@ -1,0 +1,111 @@
+/* atten-round-new - latin */
+@font-face {
+	font-family: 'atten-round-new';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/atten-round-new/AttenRoundNew-Regular.eot); /* IE9 Compat Modes */
+	src: local('AttenRoundNew Regular'), local('AttenRoundNew-Regular'),
+		url(../fonts/atten-round-new/AttenRoundNew-Regular.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(../fonts/atten-round-new/AttenRoundNew-Regular.woff2) format('woff2'), /* Super Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-Regular.woff) format('woff'), /* Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(../fonts/atten-round-new/AttenRoundNew-Regular.svg#AttenRoundNew) format('svg');	/* Legacy iOS */
+}
+
+/* atten-round-new-italic - latin */
+@font-face {
+	font-family: 'atten-round-new';
+	font-style: italic;
+	font-weight: 400;
+	src: url(../fonts/atten-round-new/AttenRoundNew-RegularItalic.eot); /* IE9 Compat Modes */
+	src: local('AttenRoundNew Regular'), local('AttenRoundNew-RegularItalic'),
+		url(../fonts/atten-round-new/AttenRoundNew-RegularItalic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(../fonts/atten-round-new/AttenRoundNew-RegularItalic.woff2) format('woff2'), /* Super Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-RegularItalic.woff) format('woff'), /* Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-RegularItalic.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(../fonts/atten-round-new/AttenRoundNew-RegularItalic.svg#AttenRoundNew) format('svg');	/* Legacy iOS */
+}
+
+/* atten-round-new500 - latin */
+@font-face {
+	font-family: 'atten-round-new';
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/atten-round-new/AttenRoundNew-Medium.eot); /* IE9 Compat Modes */
+	src: local('AttenRoundNew Regular'), local('AttenRoundNew-Medium'),
+		url(../fonts/atten-round-new/AttenRoundNew-Medium.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(../fonts/atten-round-new/AttenRoundNew-Medium.woff2) format('woff2'), /* Super Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-Medium.woff) format('woff'), /* Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-Medium.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(../fonts/atten-round-new/AttenRoundNew-Medium.svg#AttenRoundNew) format('svg');	/* Legacy iOS */
+}
+
+/* atten-round-new-500italic - latin */
+@font-face {
+	font-family: 'atten-round-new';
+	font-style: italic;
+	font-weight: 500;
+	src: url(../fonts/atten-round-new/AttenRoundNew-MediumItalic.eot); /* IE9 Compat Modes */
+	src: local('AttenRoundNew Regular'), local('AttenRoundNew-MediumItalic'),
+		url(../fonts/atten-round-new/AttenRoundNew-MediumItalic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(../fonts/atten-round-new/AttenRoundNew-MediumItalic.woff2) format('woff2'), /* Super Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-MediumItalic.woff) format('woff'), /* Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-MediumItalic.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(../fonts/atten-round-new/AttenRoundNew-MediumItalic.svg#AttenRoundNew) format('svg');	/* Legacy iOS */
+}
+
+/* atten-round-new700 - latin */
+@font-face {
+	font-family: 'atten-round-new';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/atten-round-new/AttenRoundNew-Bold.eot); /* IE9 Compat Modes */
+	src: local('AttenRoundNew Regular'), local('AttenRoundNew-Bold'),
+		url(../fonts/atten-round-new/AttenRoundNew-Bold.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(../fonts/atten-round-new/AttenRoundNew-Bold.woff2) format('woff2'), /* Super Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-Bold.woff) format('woff'), /* Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-Bold.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(../fonts/atten-round-new/AttenRoundNew-Bold.svg#AttenRoundNew) format('svg');	/* Legacy iOS */
+}
+
+/* atten-round-new-700italic - latin */
+@font-face {
+	font-family: 'atten-round-new';
+	font-style: italic;
+	font-weight: 700;
+	src: url(../fonts/atten-round-new/AttenRoundNew-BoldItalic.eot); /* IE9 Compat Modes */
+	src: local('AttenRoundNew Regular'), local('AttenRoundNew-BoldItalic'),
+		url(../fonts/atten-round-new/AttenRoundNew-BoldItalic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(../fonts/atten-round-new/AttenRoundNew-BoldItalic.woff2) format('woff2'), /* Super Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-BoldItalic.woff) format('woff'), /* Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-BoldItalic.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(../fonts/atten-round-new/AttenRoundNew-BoldItalic.svg#AttenRoundNew) format('svg');	/* Legacy iOS */
+}
+
+/* atten-round-new800 - latin */
+@font-face {
+	font-family: 'atten-round-new';
+	font-style: normal;
+	font-weight: 800;
+	src: url(../fonts/atten-round-new/AttenRoundNew-ExtraBold.eot); /* IE9 Compat Modes */
+	src: local('AttenRoundNew Regular'), local('AttenRoundNew-ExtraBold'),
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBold.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBold.woff2) format('woff2'), /* Super Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBold.woff) format('woff'), /* Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBold.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBold.svg#AttenRoundNew) format('svg');	/* Legacy iOS */
+}
+
+/* atten-round-new-800italic - latin */
+@font-face {
+	font-family: 'atten-round-new';
+	font-style: italic;
+	font-weight: 800;
+	src: url(../fonts/atten-round-new/AttenRoundNew-ExtraBoldItalic.eot); /* IE9 Compat Modes */
+	src: local('AttenRoundNew Regular'), local('AttenRoundNew-ExtraBoldItalic'),
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBoldItalic.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBoldItalic.woff2) format('woff2'), /* Super Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBoldItalic.woff) format('woff'), /* Modern Browsers */
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBoldItalic.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(../fonts/atten-round-new/AttenRoundNew-ExtraBoldItalic.svg#AttenRoundNew) format('svg');	/* Legacy iOS */
+}

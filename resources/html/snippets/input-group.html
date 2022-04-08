@@ -1,0 +1,116 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-input-group">Mostra il codice</a>
+<div id="src-input-group" class="collapse">
+
+<p class="font-weight-bold mb-1">Importo:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-group-importo code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-group-importo">
+<xmp>
+<div class="form-group">
+	<label for="...">Importo<span class="sr-only"> in euro</span>:</label>
+	<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text"><i class="fas fa-euro-sign"></i></span>
+		</div>
+		<input type="text" id="..." name="..." class="form-control" />
+		<div class="input-group-append">
+			<span class="input-group-text">,00</span>
+		</div>
+	</div>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Password:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-group-password-html code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-group-password-html" class="mb-1">
+<xmp>
+<div class="form-group">
+	<label for="...">Password:</label>
+	<div class="input-group">
+		<input type="password" id="..." name="..." class="form-control" />
+		<div class="input-group-append" aria-hidden="true">
+			<button type="button" class="btn btn-default btn-show-hide" title="Mostra password">
+				<i class="fas fa-eye"></i>
+			</button>
+		</div>
+	</div>
+</div>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione input Password:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-group-password-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-input-group-password-js">
+<xmp>
+$('.btn-show-hide').click(function() {
+	var e = $(this).parent().prev('.form-control');
+	if ($(this).children('.fas').hasClass('fa-eye')) {
+		e.attr('type','text');
+		e.attr('autocomplete','off');
+		$(this).children('.fas').removeClass('fa-eye').addClass('fa-eye-slash');
+		$(this).prop('title', 'Nascondi password');
+	} else {
+		e.attr('type','password');
+		e.removeAttr('autocomplete');
+		$(this).children('.fas').removeClass('fa-eye-slash').addClass('fa-eye');
+		$(this).prop('title', 'Mostra password');
+	}
+});
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Input con Help:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-group-help-html code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-group-help-html" class="mb-1">
+<xmp>
+<div class="form-group">
+	<label for="...">Input con Help:</label>
+	<div class="input-group">
+		<input type="text" id="..." name="..." class="form-control" />
+		<div class="input-group-append">
+			<button type="button" class="btn btn-default" data-toggle="popover" data-content="Descrizione del campo...">
+				<i class="fas fa-question"></i><span class="sr-only">Help sul campo ...</span>
+			</button>
+		</div>
+	</div>
+</div>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione Popover (input con Help):</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-group-help-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-input-group-help-js">
+<xmp>
+$('[data-toggle="popover"]').popover({
+	container: 'body',
+	placement: 'auto',
+	template: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-body"></div></div>',
+	trigger: 'hover click'
+});
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Numero carta di credito:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-group-carta-credito code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-group-carta-credito">
+<xmp>
+<div class="form-group role-group" role="group" aria-labelledby="...">
+	<label id="...">Numero carta di credito:</label>
+	<input type="text" name="..." class="form-control" maxlength="4" size="4" title="Prime 4 cifre" />
+	<input type="text" name="..." class="form-control" maxlength="4" size="4" title="Successive 4 cifre" />
+	<input type="text" name="..." class="form-control" maxlength="4" size="4" title="Successive 4 cifre" />
+	<input type="text" name="..." class="form-control" maxlength="4" size="4" title="Ultime 4 cifre" />
+</div>
+</xmp>
+</pre>
+</div>

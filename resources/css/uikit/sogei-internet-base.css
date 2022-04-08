@@ -1,0 +1,692 @@
+/*!
+ * Sogei UI Kit 4
+ * author: dgalloppa
+ */
+
+/* PALETTE
+ * primary:			#25303b	rgb(37,48,59)
+ * section-primary:	#3f4a55
+ * arancio:			#dc4405
+ * azzurro:			#009fe3
+ * giallo:			#f2a900
+ * verde:			#008264
+ * viola:			#87189d
+ */
+
+/* CSS per importare il font Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html {
+	background-color: #25303b;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+
+/* COLOR */
+.icon-primary,
+.text-primary {
+	color: #25303b !important;
+}
+.bg-primary {
+	background-color: #25303b !important;
+}
+.border-primary {
+	border-color: #25303b !important;
+}
+.icon-danger,
+.text-danger {
+	color: #d0021b !important;
+}
+.bg-danger {
+	background-color: #d0021b !important;
+}
+.border-danger {
+	border-color: #d0021b !important;
+}
+.icon-info,
+.text-info {
+	color: #009fe3 !important;
+}
+.bg-info {
+	background-color: #009fe3 !important;
+}
+.border-info {
+	border-color: #009fe3 !important;
+}
+.icon-success,
+.text-success {
+	color: #008264 !important;
+}
+.bg-success {
+	background-color: #008264 !important;
+}
+.border-success {
+	border-color: #008264 !important;
+}
+.icon-warning,
+.text-warning {
+	color: #f2a900 !important;
+}
+.bg-warning {
+	background-color: #f2a900 !important;
+}
+.border-warning {
+	border-color: #f2a900 !important;
+}
+.icon-arancio,
+.text-arancio {
+	color: #dc4405 !important;
+}
+.bg-arancio {
+	background-color: #dc4405 !important;
+}
+.border-arancio {
+	border-color: #dc4405 !important;
+}
+.icon-azzurro,
+.text-azzurro {
+	color: #009fe3 !important;
+}
+.bg-azzurro {
+	background-color: #009fe3 !important;
+}
+.border-azzurro {
+	border-color: #009fe3 !important;
+}
+.icon-giallo,
+.text-giallo {
+	color: #f2a900 !important;
+}
+.bg-giallo {
+	background-color: #f2a900 !important;
+}
+.border-giallo {
+	border-color: #f2a900 !important;
+}
+.icon-verde,
+.text-verde {
+	color: #008264 !important;
+}
+.bg-verde {
+	background-color: #008264 !important;
+}
+.border-verde {
+	border-color: #008264 !important;
+}
+.icon-viola,
+.text-viola {
+	color: #87189d !important;
+}
+.bg-viola {
+	background-color: #87189d !important;
+}
+.border-viola {
+	border-color: #87189d !important;
+}
+
+/* HEADER */
+#agenzia-header {
+	background-color: #f4f5f7;
+	color: #25303b;
+}
+#agenzia-header p > a,
+#agenzia-header p > a:hover,
+#agenzia-header p > a:visited {
+    color: #25303b !important;
+	font-family: 'Open Sans', sans-serif;
+}
+#page-header {
+	background-color: #25303b;
+	border-bottom-color: #25303b;
+	color: #fff;
+}
+#page-header .btn-primary.btn-alt:not(:hover) {
+	background-color: #fff;
+	border-color: #fff;
+	color: #25303b;
+}
+.language .btn {
+    color: #25303b;
+}
+.language .btn:focus,
+.language .btn:hover,
+.language .active > .btn {
+	background-color: #bec9d4;
+	border-color: #bec9d4;
+}
+
+/* FOOTER */
+#page-footer {
+	background-color: #25303b;
+}
+#page-footer a {
+	color: #fff;
+}
+#page-footer a:hover {
+	text-decoration: none;
+}
+#page-footer .btn-primary.btn-alt {
+	background-color: transparent;
+	border-color: transparent;
+	color: #fff;
+}
+
+/* MENU TOP */
+.navbar {
+	background-color: #25303b;
+}
+.dropdown-menu {
+	border-radius: 0;
+}
+.dropdown-item,
+.dropdown-item:focus,
+.dropdown-item:hover,
+.dropdown-item.active,
+.dropdown-item:active {
+	color: #25303b;
+}
+.megamenu-item,
+.megamenu-item:focus,
+.megamenu-item:hover,
+.megamenu-item.active,
+.megamenu-item:active {
+	color: #25303b;
+}
+
+/* MENU LEFT */
+#menu-left.navbar-light {
+	border-color: #25303b;
+}
+#menu-left.navbar-dark,
+#menu-left-title,
+#menu-left .nav-divider {
+	background-color: #25303b;
+}
+#menu-left.navbar-light.items-bordered .nav-item {
+	border-top: 1px solid rgba(37,48,59,.2);
+}
+#menu-left.navbar-light .nav-item .nav-item {
+	background-color: rgba(37,48,59,.1);
+}
+#menu-left.navbar-light .nav-link {
+	color: #25303b;
+}
+#menu-left .nav-link:not(.active):focus,
+#menu-left .nav-link:not(.active):hover {
+	font-weight: 600;
+}
+
+/* TITLE */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5,
+.card-header > .card-title,
+.btn-entrypoint {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* BADGE, MESSAGE, NOTIFICATION */
+.alert {
+	border-radius: 0;
+}
+.alert-danger {
+	border-color: #d0021b;
+}
+.alert-info {
+	border-color: #009fe3;
+}
+.alert-success {
+	border-color: #008264;
+}
+.alert-warning {
+	border-color: #f2a900;
+}
+.alert-danger > li::before,
+div.alert-danger::before {
+	color: #d0021b;
+}
+.alert-info > li::before,
+div.alert-info::before {
+	color: #009fe3;
+}
+.alert-success > li::before,
+div.alert-success::before {
+	color: #008264;
+}
+.alert-warning > li::before,
+div.alert-warning::before {
+	color: #f2a900;
+}
+.badge {
+	background-color: transparent;
+	border: 2px solid transparent;
+    color: #25303b;
+}
+.badge-primary {
+	background-color: #25303b;
+	border-color: #25303b;
+	color: #fff;
+}
+.badge-default {
+    background-color: #bec9d4;
+	border-color: #bec9d4;
+}
+.badge-danger,
+.badge-danger-alt {
+	border-color: #d0021b;
+}
+.badge-info,
+.badge-info-alt {
+	border-color: #009fe3;
+}
+.badge-success,
+.badge-success-alt {
+	border-color: #008264;
+}
+.badge-warning,
+.badge-warning-alt {
+	border-color: #f2a900;
+}
+.badge-primary-alt {
+	border-color: #25303b;
+	color: #25303b;
+}
+.badge-default-alt {
+	border-color: #bec9d4;
+}
+
+/* CARD */
+.card,
+.card-header,
+.card-footer {
+	border-radius: 0 !important;
+}
+.card-primary {
+	border-color: #25303b;
+}
+.card-primary > .card-header {
+	background-color: #25303b;
+}
+
+/* TABLE */
+.table > thead > tr > th {
+	color: #25303b;
+}
+.table-header > thead > tr > th {
+	background-color: #25303b;
+	color: #fff;
+}
+.table:not(.table-bordered),
+.table:not(.table-bordered) > thead > tr > th,
+.table-adaptive > .table-header > tbody > tr > th {
+	border-color: #25303b;
+}
+caption {
+	color: #25303b;
+}
+
+/* PAGINATION */
+.pagination,
+.page-link {
+	border-radius: 0 !important;
+}
+
+/* MODAL */
+.modal-content {
+	border-radius: 0;
+}
+
+/* LIST GROUP */
+.list-group-item {
+	border-radius: 0 !important;
+}
+
+/* ENTRYPOINT */
+.btn-entrypoint.btn-default:not(:hover) {
+	border-color: #25303b;
+	color: #25303b;
+}
+.btn-entrypoint.btn-primary:not(:hover) {
+	background-color: #25303b;
+	border-color: #25303b;
+}
+.btn-entrypoint.btn-default:active,
+.btn-entrypoint.btn-default:hover,
+.btn-entrypoint.btn-default:active:hover {
+	background-color: #25303b;
+	border-color: #25303b;
+	color: #fff;
+}
+.btn-entrypoint.btn-primary:active,
+.btn-entrypoint.btn-primary:hover,
+.btn-entrypoint.btn-primary:active:hover {
+	background-color: #fff;
+	border-color: #25303b;
+	color: #25303b;
+}
+
+/* PROGRESS BAR */
+.progress-bar-done {
+	background-color: #bec9d4;
+}
+.progress-bar-doing {
+	background-color: #25303b;
+}
+
+/* TIMELINE */
+.timeline::after {
+	background-color: #25303b;
+}
+.timeline-item-done::before,
+.timeline-item-doing::before {
+	border-right-color: #25303b;
+}
+.timeline-item-done::after {
+	border-color: #25303b;
+}
+.timeline-item-doing::after {
+	background-color: #25303b;
+}
+.timeline-item-done > .timeline-icon,
+.timeline-item-todo > .timeline-icon {
+	color: #25303b;
+}
+.timeline-item-done > .timeline-label {
+	border-color: #25303b;
+}
+.timeline-item-doing > .timeline-label {
+	background-color: #25303b;
+	border-color: #25303b;
+}
+@media (min-width: 768px) {
+	.timeline-item-done.timeline-item-left::before,
+	.timeline-item-doing.timeline-item-left::before {
+		border-left-color: #25303b;
+	}
+}
+
+/* SCROLL TOP */
+#scroll-top-btn {
+	background-color: rgba(0,93,133,.7);
+}
+#scroll-top-btn:hover {
+	background-color: #006cb0;
+}
+
+/* UTILITY */
+.section-primary {
+	background-color: #25303b;
+	background-image: linear-gradient(to right, #25303b, #25303b);
+}
+.section-primary-digito {
+	background: url('../../img/Digito_bg_bianco_sm.png') repeat,  linear-gradient(to right, #25303b, #25303b);
+}
+
+/* FORM */
+label,
+.label,
+legend,
+.input-group-text {
+	color: #25303b;
+}
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-file-input:not(:disabled) ~ .custom-file-label::after {
+	background-color: #006cb0;
+	border-color: #006cb0;
+}
+fieldset,
+.form-control,
+.custom-select,
+.custom-file-label,
+.custom-file-label::after,
+.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-prepend > .btn,
+.input-group > .input-group-prepend > .input-group-text,
+.form-control-sm:not(textarea),
+.custom-select-sm,
+.input-group-sm > .form-control,
+.input-group-sm > .custom-select,
+.input-group-sm > .input-group-append > .btn,
+.input-group-sm > .input-group-append > .input-group-text,
+.input-group-sm > .input-group-prepend > .btn,
+.input-group-sm > .input-group-prepend > .input-group-text,
+.form-control-lg:not(textarea),
+.custom-select-lg,
+.input-group-lg > .form-control,
+.input-group-lg > .custom-select,
+.input-group-lg > .input-group-append > .btn,
+.input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-prepend > .input-group-text {
+	border-radius: 0;
+}
+
+/* DATEPICKER */
+.datepicker.dropdown-menu {
+	border-radius: 0;
+}
+.datepicker table tr td.today {
+	background-color: #bec9d4;
+	border-color: #bec9d4;
+}
+.datepicker table tr td.today.active,
+.datepicker table tr td.today.active.focus,
+.datepicker table tr td.today.active:focus,
+.datepicker table tr td.today.active:hover,
+.datepicker table tr td.today.focus,
+.datepicker table tr td.today.focused,
+.datepicker table tr td.today:active,
+.datepicker table tr td.today:active.focus,
+.datepicker table tr td.today:active:focus,
+.datepicker table tr td.today:active:hover,
+.datepicker table tr td.today:focus,
+.datepicker table tr td.today:hover {
+	background-color: #009fe3;
+	border-color: #009fe3;
+	color: #fff;
+}
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.highlighted.active,
+.datepicker table tr td.active.highlighted:active,
+.datepicker table tr td.active:active,
+.datepicker table tr td span.active.active,
+.datepicker table tr td span.active.disabled.active,
+.datepicker table tr td span.active.disabled:active,
+.datepicker table tr td span.active.disabled:hover.active,
+.datepicker table tr td span.active.disabled:hover:active,
+.datepicker table tr td span.active:active,
+.datepicker table tr td span.active:hover.active,
+.datepicker table tr td span.active:hover:active {
+	background-color: #009fe3;
+	border-color: #009fe3;
+}
+.datepicker table tr td.active.active.focus,
+.datepicker table tr td.active.active:focus,
+.datepicker table tr td.active.active:hover,
+.datepicker table tr td.active.highlighted.active.focus,
+.datepicker table tr td.active.highlighted.active:focus,
+.datepicker table tr td.active.highlighted.active:hover,
+.datepicker table tr td.active.highlighted:active.focus,
+.datepicker table tr td.active.highlighted:active:focus,
+.datepicker table tr td.active.highlighted:active:hover,
+.datepicker table tr td.active:active.focus,
+.datepicker table tr td.active:active:focus,
+.datepicker table tr td.active:active:hover,
+.datepicker table tr td span.active.active.focus,
+.datepicker table tr td span.active.active:focus,
+.datepicker table tr td span.active.active:hover,
+.datepicker table tr td span.active.disabled.active.focus,
+.datepicker table tr td span.active.disabled.active:focus,
+.datepicker table tr td span.active.disabled.active:hover,
+.datepicker table tr td span.active.disabled:active.focus,
+.datepicker table tr td span.active.disabled:active:focus,
+.datepicker table tr td span.active.disabled:active:hover,
+.datepicker table tr td span.active.disabled:hover.active.focus,
+.datepicker table tr td span.active.disabled:hover.active:focus,
+.datepicker table tr td span.active.disabled:hover.active:hover,
+.datepicker table tr td span.active.disabled:hover:active.focus,
+.datepicker table tr td span.active.disabled:hover:active:focus,
+.datepicker table tr td span.active.disabled:hover:active:hover,
+.datepicker table tr td span.active:active.focus,
+.datepicker table tr td span.active:active:focus,
+.datepicker table tr td span.active:active:hover,
+.datepicker table tr td span.active:hover.active.focus,
+.datepicker table tr td span.active:hover.active:focus,
+.datepicker table tr td span.active:hover.active:hover,
+.datepicker table tr td span.active:hover:active.focus,
+.datepicker table tr td span.active:hover:active:focus,
+.datepicker table tr td span.active:hover:active:hover {
+	background-color: #006cb0;
+	border-color: #006cb0;
+}
+
+/* POPOVER */
+.popover {
+	border-radius: 0;
+}
+
+/* BUTTON */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary[disabled]:hover,
+.btn-primary:disabled,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+	background-color: #006cb0;
+	border-color: #006cb0;
+}
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-default:active,
+.btn-default:hover,
+.btn-default:active:hover,
+.btn-default:active:focus {
+	background-color: #009fe3;
+	border-color: #009fe3;
+}
+.btn-default,
+.btn-default:focus,
+.btn-default[disabled]:hover,
+.btn-default:disabled,
+.btn-default:not(:disabled):not(.disabled).active,
+.btn-default:not(:disabled):not(.disabled):active,
+.show > .btn-default.dropdown-toggle {
+	background-color: #fff;
+	border-color: #006cb0;
+	color: #006cb0;
+}
+.btn-danger,
+.btn-danger:focus,
+.btn-danger[disabled]:hover,
+.btn-danger:disabled,
+.btn-danger:not(:disabled):not(.disabled).active,
+.btn-danger:not(:disabled):not(.disabled):active,
+.show > .btn-danger.dropdown-toggle {
+	background-color: #d0021b;
+	border-color: #d0021b;
+}
+.btn-danger-alt,
+.btn-danger-alt:focus,
+.btn-danger-alt[disabled]:hover,
+.btn-danger-alt:disabled,
+.btn-danger-alt:not(:disabled):not(.disabled).active,
+.btn-danger-alt:not(:disabled):not(.disabled):active,
+.show > .btn-danger.dropdown-toggle {
+	background-color: #fff;
+	border-color: #d0021b;
+	color: #d0021b;
+}
+.btn-success,
+.btn-success:focus,
+.btn-success[disabled]:hover,
+.btn-success:disabled,
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show > .btn-success.dropdown-toggle {
+	background-color: #008264;
+	border-color: #008264;
+}
+.btn-success-alt,
+.btn-success-alt:focus,
+.btn-success-alt[disabled]:hover,
+.btn-success-alt:disabled,
+.btn-success-alt:not(:disabled):not(.disabled).active,
+.btn-success-alt:not(:disabled):not(.disabled):active,
+.show > .btn-success.dropdown-toggle {
+	background-color: #fff;
+	border-color: #008264;
+	color: #008264;
+}
+
+/* CHIPS */
+.chip-active {
+	background-color: #006cb0;
+	border-color: #006cb0;
+	color: #fff;
+}
+.chip-active:hover {
+	background-color: #009fe3;
+	border-color: #009fe3;
+	color: #fff;
+}
+
+/* VALIDAZIONE */
+fieldset.is-valid,
+.form-group.is-valid .form-control {
+	border-color: #008264;
+}
+fieldset.is-valid legend,
+.form-group.is-valid label {
+	color: #008264;
+}
+.is-valid .form-control:focus {
+	box-shadow: 0 0 0 .2rem rgba(0,130,100,.25);
+}
+fieldset.is-invalid,
+.form-group.is-invalid .form-control {
+	border-color: #d0021b;
+}
+fieldset.is-invalid legend,
+.form-group.is-invalid label {
+	color: #d0021b;
+}
+.is-invalid .form-control:focus {
+	box-shadow: 0 0 0 .2rem rgba(208,2,27,.25);
+}
+
+/* STATO */
+.custom-control-input:disabled:checked ~ .custom-control-label::before {
+	background-color: rgba(0,108,176,.5) !important;
+}
+
+/* CARD CON IMMAGINI */
+.card-img-top {
+	border-radius: 0;
+}
+@media (min-width: 576px) {
+	.card-horizontal .card-img-top {
+		border-radius: 0;
+	}
+}
+
+/* LOGIN */
+#full-page {
+	background-color: #25303b;
+	background-image: radial-gradient(#3f4a55, #25303b 90%);
+}
+#full-page #page-header,
+#full-page #page-footer {
+	border-color: rgba(255,255,255,.2);
+}
+#full-page #page-header,
+#full-page #page-footer,
+#error-msg {
+	color: #fff;
+}
+#error-msg a:not(.btn) {
+	color: #fff;
+}

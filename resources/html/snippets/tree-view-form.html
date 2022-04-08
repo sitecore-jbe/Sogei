@@ -1,0 +1,131 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-tree-view-form">Mostra il codice</a>
+<div id="src-tree-view-form" class="collapse">
+
+<p class="font-weight-bold mb-1">Selezione multipla:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-tree-view-form-multipla code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-tree-view-form-multipla">
+<xmp>
+<fieldset>
+	<legend>Selezione multipla</legend>
+	<div class="tree-view">
+		<ul class="list-unstyled">
+			<li>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="..." name="..." class="custom-control-input" />
+					<label for="..." class="custom-control-label">Voce 1</label>
+				</div>
+			</li>
+			<!-- Voce espandibile -->
+			<li class="has-subitems">
+				<a href="#submenu-c-2" class="caret collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="submenu-c-2">
+					<i class="fas"></i>
+				</a>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="..." name="..." class="custom-control-input" />
+					<label for="..." class="custom-control-label">Voce 2</label>
+				</div>
+				<ul id="submenu-c-2" class="list-unstyled collapse">
+					<li>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" id="..." name="..." class="custom-control-input" />
+							<label for="..." class="custom-control-label">Voce 2.1</label>
+						</div>
+					</li>
+					<!-- Voce espandibile -->
+					<li class="has-subitems">
+						<a href="#submenu-c-2-2" class="caret collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="submenu-c-2-2">
+							<i class="fas"></i>
+						</a>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" id="..." name="..." class="custom-control-input" />
+							<label for="..." class="custom-control-label">Voce 2.2</label>
+						</div>
+						<ul id="submenu-c-2-2" class="list-unstyled collapse">
+							<li>
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" id="..." name="..." class="custom-control-input" />
+									<label for="..." class="custom-control-label">Voce 2.2.1</label>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" id="..." name="..." class="custom-control-input" />
+					<label for="..." class="custom-control-label">Voce 3</label>
+				</div>
+			</li>
+		</ul>
+	</div>
+</fieldset>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Selezione esclusiva:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-tree-view-form-esclusiva code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-tree-view-form-esclusiva">
+<xmp>
+<fieldset>
+	<legend>Selezione esclusiva</legend>
+	<div class="tree-view">
+		<ul class="list-unstyled">
+			<li>
+				<div class="custom-control custom-radio">
+					<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+					<label for="..." class="custom-control-label">Voce 1</label>
+				</div>
+			</li>
+			<!-- Voce espandibile -->
+			<li class="has-subitems">
+				<a href="#submenu-r-2" class="caret collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="submenu-r-2">
+					<i class="fas"></i>
+				</a>
+				<div class="custom-control custom-radio">
+					<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+					<label for="..." class="custom-control-label">Voce 2</label>
+				</div>
+				<ul id="submenu-r-2" class="list-unstyled collapse">
+					<li>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+							<label for="..." class="custom-control-label">Voce 2.1</label>
+						</div>
+					</li>
+					<!-- Voce espandibile -->
+					<li class="has-subitems">
+						<a href="#submenu-r-2-2" class="caret collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="submenu-r-2-2">
+							<i class="fas"></i>
+						</a>
+						<div class="custom-control custom-radio">
+							<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+							<label for="..." class="custom-control-label">Voce 2.2</label>
+						</div>
+						<ul id="submenu-r-2-2" class="list-unstyled collapse">
+							<li>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+									<label for="..." class="custom-control-label">Voce 2.2.1</label>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="custom-control custom-radio">
+					<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+					<label for="..." class="custom-control-label">Voce 3</label>
+				</div>
+			</li>
+		</ul>
+	</div>
+</fieldset>
+</xmp>
+</pre>
+</div>

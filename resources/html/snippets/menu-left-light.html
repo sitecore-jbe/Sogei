@@ -1,0 +1,31 @@
+<nav aria-label="Menu della sezione ...">
+	<!-- Riportare come titolo del Menu di sezione la voce selezionata del Menu principale -->
+	<h1 id="menu-left-title" class="d-flex justify-content-between m-0">
+		<span class="sr-only">Menu della sezione </span>Titolo menu di sezione
+		<!-- Bottone per aprire il Menu di sezione, visibile solo nelle risoluzioni xs e sm -->
+		<button type="button" class="collapsed menu-toggler d-block d-lg-none" data-target="#menu-left" data-toggle="collapse" aria-expanded="false">
+			<span class="sr-only">Apri menu di sezione</span>
+			<i class="fas fa-lg"></i>
+		</button>
+	</h1>
+	<ul id="menu-left" class="navbar-nav navbar-light items-indent collapse">
+		<li class="nav-item"><a class="nav-link active" href="">Voce attiva</a></li>
+		<li class="nav-item"><a class="nav-link" href="">Voce</a></li>
+		<!-- Voce con menu -->
+		<li class="nav-item has-subitems">
+			<a href="#submenu-l-2" class="nav-link d-flex justify-content-between collapsed"
+				data-toggle="collapse" aria-expanded="false" aria-controls="submenu-l-2">
+				Voce con menu
+			</a>
+			<ul id="submenu-l-2" class="navbar-nav collapse">
+				<li class="nav-item"><a class="nav-link" href="">Voce 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="">Voce 2</a></li>
+			</ul>
+		</li>
+		<!-- Separatore -->
+		<li class="nav-divider" aria-hidden="true">Separatore</li>
+		<li class="nav-item"><a class="nav-link" href="">Voce</a></li>
+		<!-- Voce disabilitata -->
+		<li class="nav-item"><a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Voce disabilitata</a></li>
+	</ul>
+</nav>

@@ -1,0 +1,120 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-datepicker">Mostra il codice</a>
+<div id="src-datepicker" class="collapse">
+
+<p class="font-weight-bold mb-1">Data singola:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-datepicker-singolo code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-datepicker-singolo">
+<xmp>
+<div class="form-group">
+	<label for="...">Data<span class="sr-only"> in formato</span> (gg/mm/aaaa):</label>
+	<div class="input-group date">
+		<input id="..." name="..." type="text" class="form-control" maxlength="10" />
+		<div class="input-group-append" aria-hidden="true">
+			<button type="button" class="btn btn-primary" tabindex="-1"><i class="far fa-calendar-alt"></i></button>
+		</div>
+	</div>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Data e orario:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-datepicker-time code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-datepicker-time">
+<xmp>
+<fieldset>
+	<legend>Data e orario</legend>
+	<div class="row">
+		<div class="col-12 col-sm">
+			<div class="form-group">
+				<label for="...">Data<span class="sr-only"> in formato</span> (gg/mm/aaaa):</label>
+				<div class="input-group date">
+					<input id="..." name="..." type="text" class="form-control" maxlength="10" />
+					<div class="input-group-append" aria-hidden="true">
+						<button type="button" class="btn btn-primary" tabindex="-1"><i class="far fa-calendar-alt"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-auto">							
+			<div class="form-group role-group" role="group" aria-labelledby="...">
+				<label id="...">Orario:</label>
+				<select id="..." name="..." class="form-control" title="Ora">
+					<option value="...">Option</option>
+				</select>
+				<strong class="mr-1">:</strong>
+				<select id="..." name="..." class="form-control" title="Minuti">
+					<option value="...">Option</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</fieldset>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Range di date:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-datepicker-range code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-datepicker-range">
+<xmp>
+<fieldset>
+	<legend>Data<span class="sr-only"> in formato</span> (gg/mm/aaaa)</legend>
+	<div class="row">
+		<div class="col-12 col-sm">
+			<div class="form-group">
+				<label for="...">Dal:</label>
+				<div class="input-group date">
+					<input id="..." name="..." type="text" class="form-control" maxlength="10" />
+					<div class="input-group-append" aria-hidden="true">
+						<button type="button" class="btn btn-primary" tabindex="-1"><i class="far fa-calendar-alt"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-sm">
+			<div class="form-group">
+				<label for="...">Al:</label>
+				<div class="input-group date">
+					<input id="..." name="..." type="text" class="form-control" maxlength="10" />
+					<div class="input-group-append" aria-hidden="true">
+						<button type="button" class="btn btn-primary" tabindex="-1"><i class="far fa-calendar-alt"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</fieldset>
+</xmp>
+</pre>
+
+<p class="mb-1">Configurazione Datepicker:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-datepicker-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-datepicker-js">
+<xmp>
+$('.input-group.date').datepicker({
+	autoclose: true,
+	daysOfWeekHighlighted: [0,6],
+	enableOnReadonly: false,
+	forceParse: false,
+	format: 'dd/mm/yyyy',
+	keyboardNavigation: false,
+	language: 'it',
+	maxViewMode: 2,
+	orientation: 'auto right',
+	showOnFocus: false,
+	templates: {
+		leftArrow: '<i class="fas fa-chevron-left"></i>',
+		rightArrow: '<i class="fas fa-chevron-right"></i>'
+	},
+	todayHighlight: true
+});
+</xmp>
+</pre>
+</div>

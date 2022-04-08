@@ -1,0 +1,99 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-modal">Mostra il codice</a>
+<div id="src-modal" class="collapse">
+
+<p class="font-weight-bold mb-1">Modal con contenuto informativo:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-modal-content code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-modal-content">
+<xmp>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example-modal-content">
+	Bottone
+</button>
+<div class="modal fade" id="example-modal-content" tabindex="-1" role="dialog" data-backdrop="static"
+	aria-labelledby="modal-content-label" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title" id="modal-content-label">Titolo</h3>
+				<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+					<i class="fas fa-times"></i><span class="sr-only">Chiudi finestra di dialogo</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Contenuto
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">
+					Chiudi<span class="sr-only"> finestra di dialogo</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Modal con form:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-modal-form code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-modal-form">
+<xmp>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example-modal-form">
+	Bottone
+</button>
+<div class="modal fade" id="example-modal-form" tabindex="-1" role="dialog" data-backdrop="static"
+	aria-labelledby="modal-form-label" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form name="..." action="...">
+				<div class="modal-header">
+					<h3 class="modal-title" id="modal-form-label">Titolo</h3>
+				</div>
+				<div class="modal-body">
+					Contenuto
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary px-4 mr-3" data-dismiss="modal">OK</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Annulla</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Modal con spinner:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-modal-spinner code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-modal-spinner" class="mb-1">
+<xmp>
+<div class="modal fade" id="example-modal-spinner" tabindex="-1" role="dialog" data-backdrop="static"
+	aria-labelledby="modal-spinner-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-sm">
+		<div class="modal-content">
+			<div class="modal-body spinner" role="status">
+				<i class="fas fa-circle-notch fa-5x fa-spin my-3"></i>
+				<p id="modal-spinner-label" class="text-black">Caricamento in corso...</p>
+			</div>
+		</div>
+	</div>
+</div>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione Modal:
+	<a href="https://getbootstrap.com/docs/4.6/components/modal/#via-javascript" target="_blank" class="external-link">
+		documentazione completa<span class="sr-only">: apre una nuova finestra</span>
+	</a>
+</p>
+<pre>
+<xmp>
+$('#example-modal-spinner').modal('show');
+
+$('#example-modal-spinner').modal('hide');
+</xmp>
+</pre>
+</div>

@@ -1,0 +1,114 @@
+/*!
+ * Sogei UI Kit 4
+ * author: dgalloppa
+ */
+
+/* CSS per importare lo stile comune */
+@import url("./didattico-base.css");
+
+html {
+	background-color: #001d6d;
+}
+
+/* HEADER */
+#agenzia-header {
+    background-color: #001d6d;
+}
+#page-header {
+	background-color: #0043e4;
+	color: #fff;
+}
+#page-header .btn-primary.btn-alt:not(:hover) {
+	background-color: #fff;
+	border-color: #fff;
+	color: #0043e4;
+}
+#page-header .btn-primary.btn-alt:active,
+#page-header .btn-primary.btn-alt:hover,
+#page-header .btn-primary.btn-alt:active:hover {
+	background-color: #0043e4;
+	border-color: #0043e4;
+	color: #fff;
+}
+.language .btn:focus,
+.language .btn:hover,
+.language .active > .btn {
+	background-color: #fff;
+	border-color: #fff;
+	color: #0043e4;
+}
+
+/* FOOTER */
+#page-footer {
+	background-color: #001d6d;
+	color: #fff;
+}
+#page-footer a {
+	color: #fff;
+}
+#page-footer .btn-primary.btn-alt {
+	background-color: #fff;
+	border-color: #fff;
+	color: #001d6d;
+}
+#page-footer .btn-primary.btn-alt:hover {
+	background-color: #001d6d;
+	border-color: #001d6d;
+	color: #fff;
+}
+
+/* MENU TOP */
+.navbar {
+	background-color: #fff;
+	border-bottom: 1px solid #dcdddf;
+}
+.navbar-expand-md .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link {
+	color: #171717;
+	font-weight: 700;
+}
+.navbar-expand-md .navbar-nav .nav-link.active,
+.navbar-expand-lg .navbar-nav .nav-link.active {
+	color: #0043e4;
+}
+.navbar-brand,
+.navbar .navbar-toggler {
+	color: #171717;
+}
+#btn-accedi,
+.btn-accedi {
+	background-color: #001d6d;
+	color: #fff;
+}
+@media (min-width: 768px) {
+	.navbar-expand-md .navbar-nav .nav-link:focus,
+	.navbar-expand-md .navbar-nav .nav-link:hover,
+	.navbar-expand-md .navbar-nav .nav-link.active,
+	.navbar-expand-md .navbar-nav .nav-link.active:focus,
+	.navbar-expand-md .navbar-nav .nav-link.active:hover {
+		border-bottom-color: #0043e4;
+	}
+	.navbar-expand-md .active-reverse .nav-link.active,
+	.navbar-expand-md .active-reverse .nav-link.active:focus,
+	.navbar-expand-md .active-reverse .nav-link.active:hover {
+		border-top: .25rem solid #0043e4;
+		color: #0043e4;
+		margin-top: -.25rem;
+	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link:focus,
+	.navbar-expand-lg .navbar-nav .nav-link:hover,
+	.navbar-expand-lg .navbar-nav .nav-link.active,
+	.navbar-expand-lg .navbar-nav .nav-link.active:focus,
+	.navbar-expand-lg .navbar-nav .nav-link.active:hover {
+		border-bottom-color: #0043e4;
+	}
+	.navbar-expand-lg .active-reverse .nav-link.active,
+	.navbar-expand-lg .active-reverse .nav-link.active:focus,
+	.navbar-expand-lg .active-reverse .nav-link.active:hover {
+		border-top: .25rem solid #0043e4;
+		color: #0043e4;
+		margin-top: -.25rem;
+	}
+}

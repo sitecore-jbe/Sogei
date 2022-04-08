@@ -1,0 +1,155 @@
+/*!
+ * Sogei UI Kit 4
+ * author: Davide Galloppa
+ */
+
+/* CSS per importare lo stile comune */
+@import url("./guardia-finanza-base.css");
+
+/* PALETTE
+ * primary:			#4c6b8a
+ * section-primary:	#6685a4
+ */
+
+/* COLOR */
+.icon-primary,
+.text-primary {
+	color: #4c6b8a !important;
+}
+.bg-primary {
+	background-color: #4c6b8a !important;
+}
+.border-primary {
+	border-color: #4c6b8a !important;
+}
+
+/* HEADER */
+#agenzia-header {
+	background-color: #4c6b8a;
+}
+#page-header {
+	border-bottom-color: #4c6b8a;
+}
+#page-header .btn-primary.btn-alt:active,
+#page-header .btn-primary.btn-alt:hover,
+#page-header .btn-primary.btn-alt:active:hover {
+	background-color: #4c6b8a;
+	border-color: #4c6b8a;
+	color: #fff;
+}
+
+/* FOOTER */
+#page-footer .btn-primary.btn-alt:hover {
+	background-color: #4c6b8a;
+	border-color: #4c6b8a;
+	color: #fff;
+}
+#page-footer hr {
+	border-color: #4c6b8a;
+}
+
+/* MENU TOP */
+.megamenu-title {
+	border-bottom-color: #4c6b8a;
+}
+@media (min-width: 768px) {
+	.navbar-expand-md .active-reverse .nav-link.active,
+	.navbar-expand-md .active-reverse .nav-link.active:focus,
+	.navbar-expand-md .active-reverse .nav-link.active:hover {
+		border-top: .25rem solid #4c6b8a;
+		color: #4f5265;
+		margin-top: -.25rem;
+	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .active-reverse .nav-link.active,
+	.navbar-expand-lg .active-reverse .nav-link.active:focus,
+	.navbar-expand-lg .active-reverse .nav-link.active:hover {
+		border-top: .25rem solid #4c6b8a;
+		color: #4f5265;
+		margin-top: -.25rem;
+	}
+}
+
+/* TITLE */
+h1.underline, h2.underline, h3.underline, h4.underline {
+	border-bottom-color: #4c6b8a;
+}
+
+/* BADGE, MESSAGE, NOTIFICATION */
+.badge-primary {
+	background-color: #4c6b8a;
+}
+.badge-primary-alt {
+	border-color: #4c6b8a;
+	color: #4c6b8a;
+}
+
+/* CARD */
+.card-primary {
+	border-color: #4c6b8a;
+}
+.card-primary > .card-header {
+	background-color: #4c6b8a;
+}
+.card-simple {
+	border-color: #4c6b8a;
+}
+
+/* TABS */
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:focus,
+.nav-tabs .nav-link.active:hover {
+	border-top-color: #4c6b8a;
+	color: #4f5265;
+}
+.nav-tabs-reverse .nav-link.active,
+.nav-tabs-reverse .nav-link.active:focus,
+.nav-tabs-reverse .nav-link.active:hover {
+	border-bottom-color: #4c6b8a;
+	color: #4f5265;
+}
+.nav-tabs-vertical .nav-link.active,
+.nav-tabs-vertical .nav-link.active:focus,
+.nav-tabs-vertical .nav-link.active:hover {
+	border-right-color: #4c6b8a;
+	color: #4f5265;
+}
+
+/* TABLE */
+.table-header > thead > tr > th {
+	background-color: #4c6b8a;
+	color: #fff;
+}
+
+/* ENTRYPOINT */
+.btn-entrypoint.btn-primary:not(:hover) {
+	background-color: #4c6b8a;
+	border-color: #4c6b8a;
+}
+.btn-entrypoint.btn-primary:active,
+.btn-entrypoint.btn-primary:hover,
+.btn-entrypoint.btn-primary:active:hover {
+	background-color: #fff;
+	border-color: #4c6b8a;
+	color: #4c6b8a;
+}
+
+/* UTILITY */
+.section-primary {
+	background-color: #4c6b8a;
+	background-image: linear-gradient(to right, #4c6b8a, #6685a4);
+}
+
+/* LOGIN */
+#full-page #page-header,
+#full-page #page-footer {
+	border-color: #4c6b8a;
+}
+#login-form #btn-accedi,
+.login-form #btn-accedi,
+#login-form .btn-accedi,
+.login-form .btn-accedi {
+	background-color: #4c6b8a;
+	color: #fff;
+}

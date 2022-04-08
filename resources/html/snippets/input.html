@@ -1,0 +1,200 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-input">Mostra il codice</a>
+<div id="src-input" class="collapse">
+
+<p class="font-weight-bold mb-1">Text:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-text code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-text">
+<xmp>
+<div class="form-group">
+	<label for="...">Text:</label>
+	<input type="text" id="..." name="..." class="form-control" />
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Textarea:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-textarea code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-textarea">
+<xmp>
+<div class="form-group">
+	<label for="...">Textarea:</label>
+	<textarea id="..." name="..." class="form-control" rows="3"></textarea>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Select:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-select code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-select">
+<xmp>
+<div class="form-group">
+	<label for="...">Select:</label>
+	<select id="..." name="..." class="form-control">
+		<option value="...">Option</option>
+	</select>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">File:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-file-html code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-file-html" class="mb-1">
+<xmp>
+<div class="form-group">
+	<label for="...">File:</label>
+	<div class="custom-file">
+		<input type="file" id="..." name="..." class="custom-file-input" />
+		<span class="custom-file-label" aria-hidden="true"></span>
+	</div>
+</div>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione input File:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-file-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-input-file-js">
+<xmp>
+$('.custom-file-input').change(function() {
+	var fn = $(this)[0].files[0].name;
+	$(this).next('.custom-file-label').html(fn);
+});
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Range:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-range-html code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-range-html" class="mb-1">
+<xmp>
+<div class="form-group form-row align-items-end">
+	<div class="col">
+		<label for="...">Range:</label>
+		<input type="range" id="..." name="..." class="custom-range" min="..." max="..." step="..." />
+	</div>
+	<div class="col-auto">
+		<span id="..." class="form-control bg-light" aria-hidden="true"></span>
+	</div>
+</div>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione input Range:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-range-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-input-range-js">
+<xmp>
+$('#range-value').html($('#input-range').val());
+$('#input-range').change(function() {
+	 $('#range-value').html($(this).val());
+});
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Checkbox:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-checkbox code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-checkbox">
+<xmp>
+<fieldset>
+	<legend>Checkbox</legend>
+	<div class="custom-control custom-checkbox">
+		<input type="checkbox" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Opzione 1</label>
+	</div>
+	<div class="custom-control custom-checkbox">
+		<input type="checkbox" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Opzione 2</label>
+	</div>
+	<div class="custom-control custom-checkbox">
+		<input type="checkbox" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Opzione 3</label>
+	</div>
+</fieldset>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Checkbox singola:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-checkbox-singola code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-checkbox-singola">
+<xmp>
+<div class="form-group">
+	<div class="custom-control custom-checkbox">
+		<input type="checkbox" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Checkbox singola</label>
+	</div>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Switch:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-switch code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-switch">
+<xmp>
+<div class="form-group">
+	<div class="custom-control custom-switch">
+		<input type="checkbox" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Switch</label>
+	</div>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Radio:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-radio code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-radio">
+<xmp>
+<fieldset>
+	<legend>Radio</legend>
+	<div class="custom-control custom-radio">
+		<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Opzione 1</label>
+	</div>
+	<div class="custom-control custom-radio">
+		<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Opzione 2</label>
+	</div>
+	<div class="custom-control custom-radio">
+		<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Opzione 3</label>
+	</div>
+</fieldset>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Radio inline:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-input-radio-inline code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-input-radio-inline">
+<xmp>
+<fieldset>
+	<legend>Radio inline</legend>
+	<div class="custom-control custom-radio custom-control-inline">
+		<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">Si</label>
+	</div>
+	<div class="custom-control custom-radio custom-control-inline">
+		<input type="radio" id="..." name="..." value="..." class="custom-control-input" />
+		<label for="..." class="custom-control-label">No</label>
+	</div>
+</fieldset>
+</xmp>
+</pre>
+</div>

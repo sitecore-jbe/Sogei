@@ -1,0 +1,81 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-carousel">Mostra il codice</a>
+<div id="src-carousel" class="collapse">
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-carousel-html code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-carousel-html" class="mb-1">
+<xmp>
+<div id="custom-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+	<div class="carousel-inner">
+		<article class="carousel-item active" aria-hidden="false">
+			<div class="row">
+				<div class="col-12 col-md col-xl-auto text-center order-md-2">
+					<img src="..." class="img-fluid" alt="" />
+				</div>
+				<div class="col-12 col-md order-md-1">
+					<p class="text-muted mt-2">Data 1</p>
+					<h1>Titolo 1</h1>
+					<p>Testo 1.</p>
+					<a href="...">Link 1</a>
+				</div>
+			</div>
+		</article>
+		<article class="carousel-item" aria-hidden="false">
+			<div class="row">
+				<div class="col-12 col-md col-xl-auto text-center order-md-2">
+					<img src="..." class="img-fluid" alt="" />
+				</div>
+				<div class="col-12 col-md order-md-1">
+					<p class="text-muted mt-2">Data 2</p>
+					<h1>Titolo 2</h1>
+					<p>Testo 2.</p>
+					<a href="...">Link 2</a>
+				</div>
+			</div>
+		</article>
+		<article class="carousel-item" aria-hidden="false">
+			<div class="row">
+				<div class="col-12 col-md col-xl-auto text-center order-md-2">
+					<img src="..." class="img-fluid" alt="" />
+				</div>
+				<div class="col-12 col-md order-md-1">
+					<p class="text-muted mt-2">Data 3</p>
+					<h1>Titolo 3</h1>
+					<p>Testo 3.</p>
+					<a href="...">Link 3</a>
+				</div>
+			</div>
+		</article>
+	</div>
+	<ol class="carousel-indicators justify-content-md-start" aria-hidden="true">
+		<li data-target="#custom-carousel" data-slide-to="0" tabindex="0" class="active"></li>
+		<li data-target="#custom-carousel" data-slide-to="1" tabindex="0"></li>
+		<li data-target="#custom-carousel" data-slide-to="2" tabindex="0"></li>
+		<li class="carousel-btn">
+			<button id="carousel-pause" class="btn btn-link" title="Pausa"><i class="fas fa-pause"></i></button>
+		</li>
+		<li class="carousel-btn">
+			<button id="carousel-play" class="btn btn-link" title="Play"><i class="fas fa-play"></i></button>
+		</li>
+	</ol>
+</div>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione Carousel:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-carousel-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-carousel-js">
+<xmp>
+$('#carousel-pause').click(function() {
+	$('#custom-carousel').carousel('pause');
+});
+$('#carousel-play').click(function() {
+	$('#custom-carousel').carousel('cycle');
+});
+$('#custom-carousel li[data-slide-to]').keypress(function() {
+	$('#custom-carousel').carousel($(this).data('slide-to'));
+});
+</xmp>
+</pre>
+</div>

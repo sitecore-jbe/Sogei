@@ -1,0 +1,81 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-rating">Mostra il codice</a>
+<div id="src-rating" class="collapse">
+
+<p class="font-weight-bold mb-1">Rating:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-rating code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-rating">
+<xmp>
+<fieldset class="rating text-center pb-3">
+	<legend>Titolo rating</legend>
+	<label class="mx-3">
+		<input type="radio" name="..." value="..." class="sr-only" />
+		<i class="far fa-smile fa-3x icon-success"></i>
+		<span class="sr-only">Valore ...</span>
+	</label>
+	<label class="mx-3">
+		<input type="radio" name="..." value="..." class="sr-only" />
+		<i class="far fa-meh fa-3x icon-warning"></i>
+		<span class="sr-only">Valore ...</span>
+	</label>
+	<label class="mx-3">
+		<input type="radio" name="..." value="..." class="sr-only" />
+		<i class="far fa-frown fa-3x icon-danger"></i>
+		<span class="sr-only">Valore ...</span>
+	</label>
+</fieldset>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Rating progess:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-rating-progress code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-rating-progress" class="mb-1">
+<xmp>
+<fieldset class="rating text-center pb-3">
+	<legend>Titolo rating</legend>
+	<div class="rating-progress">
+		<label>
+			<input type="radio" name="..." value="..." class="sr-only" />
+			<i class="far fa-star fa-2x icon-primary"></i>
+			<span class="sr-only">Valore ...</span>
+		</label>
+		<label>
+			<input type="radio" name="..." value="..." class="sr-only" />
+			<i class="far fa-star fa-2x icon-primary"></i>
+			<span class="sr-only">Valore ...</span>
+		</label>
+		<label>
+			<input type="radio" name="..." value="..." class="sr-only" />
+			<i class="far fa-star fa-2x icon-primary"></i>
+			<span class="sr-only">Valore ...</span>
+		</label>
+		<label>
+			<input type="radio" name="..." value="..." class="sr-only" />
+			<i class="far fa-star fa-2x icon-primary"></i>
+			<span class="sr-only">Valore ...</span>
+		</label>
+		<label>
+			<input type="radio" name="..." value="..." class="sr-only" />
+			<i class="far fa-star fa-2x icon-primary"></i>
+			<span class="sr-only">Valore ...</span>
+		</label>
+	</div>
+</fieldset>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione Rating progress:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-rating-progress-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-rating-progress-js">
+<xmp>
+$('.rating-progress input[type=radio]').change(function() {
+	$(this).parent().prevAll().children('.far').addClass('font-weight-bold');
+	$(this).parent().nextAll().children('.far').removeClass('font-weight-bold');
+});
+</xmp>
+</pre>
+</div>

@@ -1,0 +1,155 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-tabelle">Mostra il codice</a>
+<div id="src-tabelle" class="collapse">
+
+<p class="font-weight-bold mb-1">Tabella:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-tabella code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-tabella">
+<xmp>
+<div class="table-responsive">
+	<table class="table">
+		<caption class="sr-only">Titolo della tabella</caption>
+		<thead>
+			<tr>
+				<th>Header</th>
+				<th>Header</th>
+				<th><span class="sr-only">Azioni</span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Header</th>
+				<td>Cell</td>
+				<td class="text-right text-nowrap">
+					<a href="..." class="btn btn-primary btn-xs" title="Dettaglio">
+						<i class="fas fa-search"></i><span class="sr-only">Dettaglio ...</span>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<th><a href="...">Header con link a pagina di dettaglio</a></th>
+				<td>Cell</td>
+				<td class="text-right text-nowrap">
+					<button type="button" class="btn btn-primary btn-xs" onclick="..." title="Modifica">
+						<i class="fas fa-pencil-alt"></i><span class="sr-only">Modifica ...</span>
+					</button>
+					<button type="button" class="btn btn-danger btn-xs" onclick="..." title="Elimina">
+						<i class="fas fa-trash-alt"></i><span class="sr-only">Elimina ...</span>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<th><a href="...">Header con link a pagina di dettaglio</a></th>
+				<td>Cell</td>
+				<td class="text-right">
+					<div class="btn-group" role="group">
+						<button id="btn-group-1" type="button" class="btn btn-primary btn-xs dropdown-toggle"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Azioni
+						</button>
+						<div class="dropdown-menu" aria-labelledby="btn-group-1">
+							<a class="dropdown-item" href="..."><i class="fas fa-pencil-alt mr-2"></i>Modifica</a>
+							<a class="dropdown-item" href="..."><i class="fas fa-trash-alt mr-2"></i>Elimina</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Tabella ottimizzata per le risoluzioni <em>mobile</em>:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-tabella-mobile code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-tabella-mobile">
+<xmp>
+<div class="table-responsive table-adaptive table-md-default separate-row">
+	<table class="table">
+		<caption class="sr-only">Titolo della tabella</caption>
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Descrizione</th>
+				<th class="text-right">Numero</th>
+				<th><span class="sr-only">Azioni</span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="text-nowrap">Nome 1</th>
+				<td data-th="Descrizione:">Descrizione 1</td>
+				<td data-th="Numero:" class="text-md-right text-nowrap">0,00</td>
+				<td class="text-md-right text-nowrap">
+					<a href="..." class="btn btn-primary btn-xs" title="Dettaglio">
+						<i class="fas fa-search"></i><span class="sr-only">Dettaglio ...</span>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<th class="text-nowrap"><a href="...">Nome 2</a></th>
+				<td data-th="Descrizione:">Descrizione 2</td>
+				<td data-th="Numero:" class="text-md-right text-nowrap">0,00</td>
+				<td class="text-md-right text-nowrap">
+					<button type="button" class="btn btn-primary btn-xs" onclick="..." title="Modifica">
+						<i class="fas fa-pencil-alt"></i><span class="sr-only">Modifica ...</span>
+					</button>
+					<button type="button" class="btn btn-danger btn-xs" onclick="..." title="Elimina">
+						<i class="fas fa-trash-alt"></i><span class="sr-only">Elimina ...</span>
+					</button>
+				</td>
+			</tr>
+			<tr>
+				<th class="text-nowrap"><a href="...">Nome 3</a></th>
+				<td data-th="Descrizione:">Descrizione 3</td>
+				<td data-th="Numero:" class="text-md-right text-nowrap">0,00</td>
+				<td class="text-md-right">
+					<div class="btn-group" role="group">
+						<button id="btn-group-1" type="button" class="btn btn-primary btn-xs dropdown-toggle"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Azioni
+						</button>
+						<div class="dropdown-menu" aria-labelledby="btn-group-1">
+							<a class="dropdown-item" href="..."><i class="fas fa-pencil-alt mr-2"></i>Modifica</a>
+							<a class="dropdown-item" href="..."><i class="fas fa-trash-alt mr-2"></i>Elimina</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</xmp>
+</pre>
+
+<p class="font-weight-bold mb-1">Tabella di dettaglio:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-tabella-dettaglio code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-tabella-dettaglio">
+<xmp>
+<div class="table-responsive">
+	<table class="table">
+		<caption class="sr-only">Titolo della tabella</caption>
+		<tbody>
+			<tr>
+				<th>Etichetta</th>
+				<td>Valore</td>
+			</tr>
+			<tr>
+				<th>Etichetta</th>
+				<td>Valore</td>
+			</tr>
+			<tr>
+				<th>Etichetta</th>
+				<td>Valore</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</xmp>
+</pre>
+</div>

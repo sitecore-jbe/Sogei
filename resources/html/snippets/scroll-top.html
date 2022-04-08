@@ -1,0 +1,33 @@
+<a class="view-source collapsed" data-toggle="collapse" href="#src-scroll-top">Mostra il codice</a>
+<div id="src-scroll-top" class="collapse">
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-scroll-top-html code" data-toggle="tooltip">
+	<i class="fab fa-html5 mr-2"></i>Copia
+</button>
+<pre id="src-scroll-top-html" class="mb-1">
+<xmp>
+<button type="button" id="scroll-top-btn" class="btn btn-primary" title="Torna all'inizio" aria-hidden="true">
+	<i class="fas fa-chevron-up fa-2x"></i>
+</button>
+</xmp>
+</pre>
+<p class="mb-1">Configurazione Scroll to top:</p>
+<button class="btn btn-xs btn-copy" data-clipboard-action="copy" data-clipboard-target="#src-scroll-top-js code" data-toggle="tooltip">
+	<i class="fab fa-js mr-2"></i>Copia
+</button>
+<pre id="src-scroll-top-js">
+<xmp>
+var scrollTopBtn = $('#scroll-top-btn');
+$(window).scroll(function() {
+	if ($(window).scrollTop() > 300) {
+		scrollTopBtn.addClass('d-block');
+	} else {
+		scrollTopBtn.removeClass('d-block');
+	}
+});
+scrollTopBtn.click(function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, 'slow');
+});
+</xmp>
+</pre>
+</div>

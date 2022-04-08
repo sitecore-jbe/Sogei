@@ -1,0 +1,314 @@
+/* UI KIT DEMO */
+
+/* HOME */
+.display {
+	font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+	.display {
+		font-size: 3rem;
+	}
+}
+abbr {
+	font-weight: 600;
+}
+.blockquote {
+	font-size: 1rem;
+}
+.guide-number {
+	bottom: 0;
+	color: rgba(255,255,255,.5);
+	font-weight: 900;
+	margin-bottom: .5rem;
+	right: 1rem;
+	position: absolute;
+}
+#browser {
+	padding-bottom: 0;
+}
+#browser .fab {
+	color: #66a5e3;
+	display: block;
+	font-size: 4rem;
+	margin: .75rem 0 .25rem;
+}
+#browser span {
+	color: #fff;
+}
+#browser .col-4:hover .fab {
+	color: #06c;
+}
+#browser .col-4:hover span {
+	color: inherit;
+}
+@media (min-width: 768px) {
+	#guida .card > .card-img-icon > .fa-card {
+		font-size: 4rem;
+	}
+}
+
+/* TEMI */
+#temi .card-header {
+	align-items: center;
+	display: flex;
+	height: 168px;
+	justify-content: center;
+}
+#temi .card-img-top {
+	max-height: 100%;
+}
+#sogei-i-logo,
+#mattm-logo,
+#didattico-logo {
+	background-color: #fff;
+}
+#sogei-o-logo {
+	background-color: #25303b;
+}
+#ae-logo,
+#ad-logo,
+#adm-logo,
+#eqg-logo,
+#pff-logo {
+	background-color: #f0f1f3;
+}
+#gdf-logo {
+	background-color: #4f5265;
+}
+#mef-logo {
+	background-color: #0a2644;
+}
+#rgs-logo {
+	background-color: #004da2;
+}
+#sts-logo {
+	background-color: #005a8c;
+}
+#gt-logo {
+	background-color: #00678c;
+}
+#lds-logo {
+	background-color: #225688;
+}
+#didattico-logo {
+	background-color: #0043e4;
+}
+#act-logo {
+	background-color: #f4f5f7;
+}
+#it-logo {
+	background-color: #06c;
+}
+.color-palette {
+	border-radius: .5rem;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: .5rem 0;
+	padding: 2rem 0;
+	text-align: center;
+}
+.color-palette-sm {
+	color: #19191a;
+	padding: .75rem 0;
+}
+.color-palette-xs {
+	color: #19191a;
+	font-size: 1rem;
+	padding: .25rem 0;
+}
+.color-palette > .color-name {
+	display: block;
+	font-size: 1rem;
+	line-height: .5;
+}
+
+/* STRUTTURA PAGINA */
+header a:not(:hover) {
+	text-decoration: none !important;
+}
+nav a:not(:hover) {
+	text-decoration: none !important;
+}
+#cookiebar {
+	position: relative;
+}
+
+/* LAYOUT RESPONSIVE */
+.column {
+	background-color: rgba(86,61,124,.15);
+	margin-bottom: 1.5rem;
+	padding: 2rem 1rem 1rem;
+	text-align: center;
+}
+
+/* MOSTRA IL CODICE */
+.view-source {
+	display: block;
+	font-weight: 600;
+	margin: 1rem 0;
+	text-align: left;
+}
+.view-source,
+.link-palette {
+	text-decoration: none !important;
+}
+.view-source::before,
+.link-palette::after {
+	content: '\f139';
+	display: inline-block;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	text-align: center;
+	width: 1.25rem;
+}
+.view-source::before {
+	margin-right: .5rem;
+}
+.view-source:hover::before,
+.link-palette:hover::after {
+	content: '\f077';
+}
+.view-source.collapsed::before,
+.link-palette.collapsed::after {
+	content: '\f13a';
+}
+.view-source.collapsed:hover::before,
+.link-palette.collapsed:hover::after {
+	content: '\f078';
+}
+.snippet {
+	display: none;
+}
+@media (min-width: 768px) {
+	.snippet {
+		display: block;
+		margin: 1rem 0;
+		position: relative;
+	}
+}
+xmp {
+	margin: 0;
+}
+pre {
+	background-color: #19191a;
+	font-size: 14px;
+	padding: 0 1rem;
+	tab-size: 4;
+}
+
+/* highlight.js */
+.hljs {
+	background: #19191a;
+	color: #dcdcdc;
+	display: block;
+}
+.hljs-keyword,
+.hljs-literal,
+.hljs-symbol,
+.hljs-name {
+	color: #569cd6;
+}
+.hljs-link {
+	color: #569cd6;
+	text-decoration: underline;
+}
+.hljs-built_in,
+.hljs-type {
+	color: #4ec9b0;
+}
+.hljs-number,
+.hljs-class {
+	color: #b8d7a3;
+}
+.hljs-string,
+.hljs-meta-string {
+	color: #d69d85;
+}
+.hljs-regexp,
+.hljs-template-tag {
+	color: #9a5334;
+}
+.hljs-subst,
+.hljs-function,
+.hljs-title,
+.hljs-params,
+.hljs-formula {
+	color: #dcdcdc;
+}
+.hljs-comment,
+.hljs-quote {
+	color: #57a64a;
+	font-style: italic;
+}
+.hljs-doctag {
+	color: #608b4e;
+}
+.hljs-meta,
+.hljs-meta-keyword,
+.hljs-tag {
+	color: #9b9b9b;
+}
+.hljs-variable,
+.hljs-template-variable {
+	color: #bd63c5;
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-builtin-name {
+	color: #9cdcfe;
+}
+.hljs-section {
+	color: gold;
+}
+.hljs-emphasis {
+	font-style: italic;
+}
+.hljs-strong {
+	font-weight: 600;
+}
+.hljs-bullet,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+	color: #d7ba7d;
+}
+.hljs-addition {
+	background-color: #144212;
+	display: inline-block;
+	width: 100%;
+}
+.hljs-deletion {
+	background-color: #600;
+	display: inline-block;
+	width: 100%;
+}
+
+/* clipboard.js */
+.btn-copy {
+	background-color: #19191a;
+	border-color: #fff;
+	color: #fff !important;
+	margin-top: 1rem;
+	position: absolute;
+	right: 1rem;
+}
+
+/* iPhone X display optimization */
+/* @supports(padding: max(0px)) { */
+/* 	.container-fluid { */
+/* 		padding-left: max(12px, env(safe-area-inset-left)); */
+/* 		padding-right: max(12px, env(safe-area-inset-right)); */
+/* 	} */
+/* } */
+
+/* @media (min-width: 768px) { */
+/* 	#hero { */
+/* 		background-image: url('img/devices30.png'); */
+/* 	    background-position: right bottom; */
+/* 	    background-repeat: no-repeat; */
+/* 		background-size: contain; */
+/* 	} */
+/* } */
