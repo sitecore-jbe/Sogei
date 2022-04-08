@@ -89,9 +89,9 @@ $(document).ready(function() {
 	);
 
 	// Includes
-	$('body > header').load('resources/html/includes/header.html?v='+version);
-	$('body > footer').load('resources/html/includes/footer.html?v='+version);
-	$('body > nav').load('resources/html/includes/menu-top.html?v='+version, function() {
+	$('body > header').load('/resources/html/includes/header.html?v='+version);
+	$('body > footer').load('/resources/html/includes/footer.html?v='+version);
+	$('body > nav').load('/resources/html/includes/menu-top.html?v='+version, function() {
 		$('#menu-top > ul > li').each(function() {
 			if (window.location.pathname.indexOf($(this).data('active')) >= 0) {
 		    	$(this).children('.nav-link').addClass('active');
@@ -103,7 +103,7 @@ $(document).ready(function() {
 			}
 		});
 	});
-	$('#menu-componenti').load('resources/html/includes/menu-componenti.html?v='+version, function() {
+	$('#menu-componenti').load('/resources/html/includes/menu-componenti.html?v='+version, function() {
 		$('#menu-left > li').each(function() {
 			if (window.location.pathname.indexOf($(this).data('active')) >= 0) {
 		    	$(this).children('.nav-link').addClass('active');
@@ -115,7 +115,7 @@ $(document).ready(function() {
 	// Template
 	$.each(arrTemplate, function(key, value) {
 		var tplTesto = '#tpl-'+value;
-		$.get('resources/html/snippets/'+value+'.html?v='+version, function(data) {
+		$.get('/resources/html/snippets/'+value+'.html?v='+version, function(data) {
 			//if (value == 'menu-top-siti') alert('menu-top-siti');
 			$(tplTesto).replaceWith(data);
 			if (value == 'menu-top-siti') { 
@@ -141,13 +141,13 @@ $(document).ready(function() {
 		});
 
 		var snpTesto = '#snp-'+value;
-		$(snpTesto).load('resources/html/snippets/'+value+'.html?v='+version);
+		$(snpTesto).load('/resources/html/snippets/'+value+'.html?v='+version);
 	});
 
 	// Snippet
 	$.each(arrSnippet, function(key, value) {
 		var snpTesto = '#snp-'+value;
-		$(snpTesto).load('resources/html/snippets/'+value+'.html?v='+version);
+		$(snpTesto).load('/resources/html/snippets/'+value+'.html?v='+version);
 	});
 	
 	// Prevent link example
@@ -330,127 +330,127 @@ function selectTheme(theme) {
 	switch (theme) {
 	case 'sogei-o':
 		var color = sessionStorage.getItem('uikit_color');
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/sogei-internet-'+color+'.css');
-		$('header .logo').attr('src', 'resources/img/Digito_'+color+'_152.png');
-		$('footer .logo').attr('src', 'resources/img/Digito_'+color+'_152.png');
-		$('#sogei-o-logo > img').attr('src', 'resources/img/Sogei_bianco_'+color+'_304.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/sogei-internet-'+color+'.css');
+		$('header .logo').attr('src', '/resources/img/Digito_'+color+'_152.png');
+		$('footer .logo').attr('src', '/resources/img/Digito_'+color+'_152.png');
+		$('#sogei-o-logo > img').attr('src', '/resources/img/Sogei_bianco_'+color+'_304.png');
 		$('html:not(#full-page) #page-header').addClass('section-primary-digito');
 		$('#hero').addClass('section-primary-digito');
 		break;
 	case 'ae':
 		if (sessionStorage.getItem('uikit_color') === 'riscossione') {
-			$('#agenzia-theme').attr('href', 'resources/css/uikit/agenzia-entrate-riscossione.css');
-			$('header .logo').attr('src', 'resources/img/ADER_logo_152.png');
-			$('footer .logo').attr('src', 'resources/img/ADER_mono_152.png');
+			$('#agenzia-theme').attr('href', '/resources/css/uikit/agenzia-entrate-riscossione.css');
+			$('header .logo').attr('src', '/resources/img/ADER_logo_152.png');
+			$('footer .logo').attr('src', '/resources/img/ADER_mono_152.png');
 			$('#menu-top .navbar-nav').addClass('active-reverse');
 		} else {
-			$('#agenzia-theme').attr('href', 'resources/css/uikit/agenzia-entrate.css');
-			$('header .logo').attr('src', 'resources/img/AE_logo_152.png');
-			$('footer .logo').attr('src', 'resources/img/AE_mono_152.png');
+			$('#agenzia-theme').attr('href', '/resources/css/uikit/agenzia-entrate.css');
+			$('header .logo').attr('src', '/resources/img/AE_logo_152.png');
+			$('footer .logo').attr('src', '/resources/img/AE_mono_152.png');
 		}
 		break;
 	case 'adm':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/dogane-monopoli.css');
-		$('header .logo').attr('src', 'resources/img/ADM_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/ADM_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/dogane-monopoli.css');
+		$('header .logo').attr('src', '/resources/img/ADM_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/ADM_mono_152.png');
 		break;
 	case 'ad':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/agenzia-demanio.css');
-		$('header .logo').attr('src', 'resources/img/AD_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/AD_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/agenzia-demanio.css');
+		$('header .logo').attr('src', '/resources/img/AD_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/AD_mono_152.png');
 		break;
 	case 'gdf':
 		var color = sessionStorage.getItem('uikit_color');
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/guardia-finanza-'+color+'.css');
-		$('header .logo').attr('src', 'resources/img/GdF_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/GdF_logo_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/guardia-finanza-'+color+'.css');
+		$('header .logo').attr('src', '/resources/img/GdF_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/GdF_logo_152.png');
 		$('#page-header').addClass('bg-grifone');
 		break;
 	case 'mef':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/mef.css');
-		$('header .logo').attr('src', 'resources/img/MEF_mono_152.png');
-		$('footer .logo').attr('src', 'resources/img/MEF_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/mef.css');
+		$('header .logo').attr('src', '/resources/img/MEF_mono_152.png');
+		$('footer .logo').attr('src', '/resources/img/MEF_mono_152.png');
 		break;
 	case 'rgs':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/rgs.css');
-		$('header .logo').attr('src', 'resources/img/RGS_mono_152.png');
-		$('footer .logo').attr('src', 'resources/img/RGS_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/rgs.css');
+		$('header .logo').attr('src', '/resources/img/RGS_mono_152.png');
+		$('footer .logo').attr('src', '/resources/img/RGS_mono_152.png');
 		break;
 	case 'mattm':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/ministero-ambiente.css');
-		$('header .logo').attr('src', 'resources/img/MATTM_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/MATTM_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/ministero-ambiente.css');
+		$('header .logo').attr('src', '/resources/img/MATTM_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/MATTM_mono_152.png');
 		break;
 	case 'sts':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/sistema-ts.css');
-		$('header .logo').attr('src', 'resources/img/STS_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/STS_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/sistema-ts.css');
+		$('header .logo').attr('src', '/resources/img/STS_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/STS_mono_152.png');
 		break;
 	case 'gt':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/giustizia-tributaria.css');
-		$('header .logo').attr('src', 'resources/img/GT_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/GT_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/giustizia-tributaria.css');
+		$('header .logo').attr('src', '/resources/img/GT_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/GT_mono_152.png');
 		break;
 	case 'lds':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/lotteria-scontrini.css');
-		$('header .logo').attr('src', 'resources/img/LDS_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/LDS_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/lotteria-scontrini.css');
+		$('header .logo').attr('src', '/resources/img/LDS_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/LDS_mono_152.png');
 		break;
 	case 'didattico':
 		switch (sessionStorage.getItem('uikit_color')) {
 		case 'pubblico':
-			$('#agenzia-theme').attr('href', 'resources/css/uikit/didattico-pubblico.css');
-			$('header .logo').attr('src', 'resources/img/Didattico_sm_bianco_152.png');
-			$('footer .logo').attr('src', 'resources/img/Didattico_sm_nero_152.png');
+			$('#agenzia-theme').attr('href', '/resources/css/uikit/didattico-pubblico.css');
+			$('header .logo').attr('src', '/resources/img/Didattico_sm_bianco_152.png');
+			$('footer .logo').attr('src', '/resources/img/Didattico_sm_nero_152.png');
 			break;
 		case 'docente':
-			$('#agenzia-theme').attr('href', 'resources/css/uikit/didattico-docente.css');
-			$('header .logo').attr('src', 'resources/img/Didattico_sm_nero_152.png');
-			$('footer .logo').attr('src', 'resources/img/Didattico_sm_bianco_152.png');
+			$('#agenzia-theme').attr('href', '/resources/css/uikit/didattico-docente.css');
+			$('header .logo').attr('src', '/resources/img/Didattico_sm_nero_152.png');
+			$('footer .logo').attr('src', '/resources/img/Didattico_sm_bianco_152.png');
 			break;
 		case 'alunno':
-			$('#agenzia-theme').attr('href', 'resources/css/uikit/didattico-alunno.css');
-			$('header .logo').attr('src', 'resources/img/Didattico_sm_bianco_152.png');
-			$('footer .logo').attr('src', 'resources/img/Didattico_sm_bianco_152.png');
+			$('#agenzia-theme').attr('href', '/resources/css/uikit/didattico-alunno.css');
+			$('header .logo').attr('src', '/resources/img/Didattico_sm_bianco_152.png');
+			$('footer .logo').attr('src', '/resources/img/Didattico_sm_bianco_152.png');
 			break;
 		}
 		break;
 	case 'act':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/act-intranet.css');
-		$('header .logo').attr('src', 'resources/img/ACT_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/ACT_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/act-intranet.css');
+		$('header .logo').attr('src', '/resources/img/ACT_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/ACT_mono_152.png');
 		$('.section-grey').addClass('section-grey-pittogrammi');
 		break;
 	case 'eqg':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/equitalia-giustizia.css');
-		$('header .logo').attr('src', 'resources/img/EqG_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/EqG_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/equitalia-giustizia.css');
+		$('header .logo').attr('src', '/resources/img/EqG_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/EqG_mono_152.png');
 		break;
 	case 'pff':
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/portale-ff.css');
-		$('header .logo').attr('src', 'resources/img/PFF_logo_152.png');
-		$('footer .logo').attr('src', 'resources/img/PFF_mono_152.png');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/portale-ff.css');
+		$('header .logo').attr('src', '/resources/img/PFF_logo_152.png');
+		$('footer .logo').attr('src', '/resources/img/PFF_mono_152.png');
 		break;
 	case 'it':
 		if (sessionStorage.getItem('uikit_color') === 'light') {
-			$('#agenzia-theme').attr('href', 'resources/css/uikit/it-light.css');
-			$('header .logo').attr('src', 'resources/img/it_logo_152.png');
+			$('#agenzia-theme').attr('href', '/resources/css/uikit/it-light.css');
+			$('header .logo').attr('src', '/resources/img/it_logo_152.png');
 		} else {
-			$('#agenzia-theme').attr('href', 'resources/css/uikit/it.css');
-			$('header .logo').attr('src', 'resources/img/it_mono_152.png');
+			$('#agenzia-theme').attr('href', '/resources/css/uikit/it.css');
+			$('header .logo').attr('src', '/resources/img/it_mono_152.png');
 		}
-		$('footer .logo').attr('src', 'resources/img/it_mono_152.png');
+		$('footer .logo').attr('src', '/resources/img/it_mono_152.png');
 		break;
 	default:
-		$('#agenzia-theme').attr('href', 'resources/css/uikit/sogei-intranet.css');
+		$('#agenzia-theme').attr('href', '/resources/css/uikit/sogei-intranet.css');
 		var colorsH = ['arancio','azzurro','giallo','verde','verdechiaro','viola'];
 		var colorH = colorsH[Math.floor(Math.random() * colorsH.length)];
-		$('header .logo').attr('src', 'resources/img/Digito_'+colorH+'_152.png');
+		$('header .logo').attr('src', '/resources/img/Digito_'+colorH+'_152.png');
 		var colorsF = ['arancio','azzurro','bianco','giallo','verdechiaro'];
 		var colorF = colorsF[Math.floor(Math.random() * colorsF.length)];
-		$('footer .logo').attr('src', 'resources/img/Digito_'+colorF+'_152.png');
-		$('#sogei-i-logo > img').attr('src', 'resources/img/Sogei_'+colorH+'_304.png');
-		$('#full-page header .logo').attr('src', 'resources/img/Digito_giallo_152.png');
+		$('footer .logo').attr('src', '/resources/img/Digito_'+colorF+'_152.png');
+		$('#sogei-i-logo > img').attr('src', '/resources/img/Sogei_'+colorH+'_304.png');
+		$('#full-page header .logo').attr('src', '/resources/img/Digito_giallo_152.png');
 		$('#hero').addClass('section-primary-digito');
 		break;
 	}
