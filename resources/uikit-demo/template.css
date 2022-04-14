@@ -42,7 +42,7 @@
 }
 
 @media (min-width: 1200px) {
-	#template-siti .container-fluid {
+	#template-siti .section .container-fluid {
 		max-width: 1280px;
 	}
 }
