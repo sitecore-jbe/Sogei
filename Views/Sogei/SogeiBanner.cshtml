@@ -1,0 +1,44 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+@using Sitecore.Mvc.Helpers
+@using Sitecore.Mvc
+
+
+@model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
+
+@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+<section class="section section-bg-img">
+    <div class="container-fluid py-3 py-md-4">
+        <div class="row my-5">
+            <div class="col-12 col-md-5">
+                <h1>Home Page</h1>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="card card-bg-over border-0 my-2 shadow">
+                    <div class="card-body">
+                        <p class="h4">Lorem ipsum</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                        <a href="" class="btn btn-primary btn-lg mt-3">Scopri di pi&ugrave;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@*<div class="component-content">
+        @if (Model.DataSourceItem == null)
+        {
+            @Model.MessageIsEmpty
+        }
+        else
+        {
+            foreach (BaseVariantField variantField in Model.VariantFields)
+            {
+                @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+            }
+        }
+    </div>*@
+}
