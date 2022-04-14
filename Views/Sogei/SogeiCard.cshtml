@@ -14,16 +14,7 @@
     <div class="card card-simple px-3 shadow">
         <div class="card-body">
             <h3 class="card-title">@Html.Sitecore().Field("Title", Model.Item)</h3>
-            <span class="text-muted"><i class="far fa-calendar-alt mr-2"></i>@Html.Sitecore().Field("Date", Model.Item)</span>
-            <p>
-                @Html.Sitecore().Field("Intro", Model.Item)
-                <a href="" aria-label="Leggi ...">Leggi</a>
-            </p>
-            <span class="text-muted"><i class="far fa-calendar-alt mr-2"></i>Data</span>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua...
-                <a href="" aria-label="Leggi ...">Leggi</a>
-            </p>
+            @Html.Sitecore().Placeholder("dateintro")
         </div>
         <div class="card-footer">
             <ul class="list-inline d-flex mb-0">
