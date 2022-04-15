@@ -30,38 +30,23 @@
                     </form>
                     <ul class="navbar-nav align-items-md-end py-md-1 mr-auto">
                         @{
-                            @Html.Raw("Model.Item.DisplayName : " + Model.Item.DisplayName)
                             Sitecore.Data.Fields.ReferenceField headerHomeItemField = null;
                             if (Model.DataSourceItem != null)
                             {
-                                @Html.Raw("Model.DataSourceItem?.DisplayName : " + Model.DataSourceItem.DisplayName)
                                 headerHomeItemField = Model.DataSourceItem.Fields["Header Home Item"];
                             }
-
 
                             Sitecore.Data.Items.Item mainItem = Model.Item;
 
                             if (headerHomeItemField != null)
                             {
-                                @Html.Raw("headerHomeItemField is not null");
 
                                 if (headerHomeItemField.TargetItem != null)
                                 {
-                                    @Html.Raw("headerHomeItemField.TargetItem is not null");
 
                                     mainItem = headerHomeItemField.TargetItem;
                                 }
-                                else
-                                {
-                                    @Html.Raw("headerHomeItemField.TargetItem is  null");
-                                }
                             }
-                            else
-                            {
-                                @Html.Raw("headerHomeItemField is  null");
-                            }
-
-                            @Html.Raw("MainItem : " + mainItem.DisplayName)
                         }
                         <li class="nav-item text-md-center" data-active="template-siti-home-alt">
                             <a class="nav-link active" href="template-siti-home-alt.html">@Html.Sitecore().Field("NavigationTitle", mainItem)</a>
