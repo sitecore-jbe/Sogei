@@ -32,7 +32,7 @@
                         @{
                             Sitecore.Data.Fields.ReferenceField headerHomeItemField = Model.Item.Fields["Header Home Item"];
 
-                            Sitecore.Data.Items.Item mainItem = headerHomeItemField.TargetItem != null ? headerHomeItemField.TargetItem : Model.Item;
+                            Sitecore.Data.Items.Item mainItem = headerHomeItemField?.TargetItem != null ? headerHomeItemField?.TargetItem : Model.Item;
 
                             @Html.Raw("MainItem : " + mainItem.DisplayName)
                         }
