@@ -1,0 +1,37 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+@using Sitecore.Mvc.Helpers
+@using Sitecore.Mvc
+
+
+@model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
+
+@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{
+    <article class="card card-default card-image border-0 mt-5 shadow">
+        <img class="card-img-top img-circle mt-n5" src="resources/uikit-demo/img/example-square-1.jpg" alt="">
+        <div class="card-body">
+            <h3 class="card-title text-center">Titolo Card</h3>
+            <p>Questa card punta ad una pagina di dettaglio presente nel sito</p>
+        </div>
+        <div class="card-footer text-right">
+            <a href="template-siti-dettaglio.html">Link con icona<i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+        </div>
+    </article>
+    @*<div class="component-content">
+            @if (Model.DataSourceItem == null)
+            {
+            @Model.MessageIsEmpty
+            }
+            else
+            {
+            foreach (BaseVariantField variantField in Model.VariantFields)
+            {
+            @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+            }
+            }
+        </div>*@
+}
