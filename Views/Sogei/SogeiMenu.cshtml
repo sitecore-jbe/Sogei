@@ -33,11 +33,11 @@
                             <a class="nav-link active" href="template-siti-home-alt.html">@Html.Sitecore().Field("NavigationTitle", Model.Item)</a>
                         </li>
                         @{
-                            foreach (var x in Model.Item.Children)
+                            foreach (var x in Model.DataSourceItem.Children)
                             {                                
-                                //var z = Sitecore.Links.LinkManager.GetItemUrl(x);
+                                var z = Sitecore.Links.LinkManager.GetItemUrl(x);
                                 <li class="nav-item text-md-center" data-active="template-siti-pagina">
-                                    <a class="nav-link" href=""><i class="fab fa-font-awesome-flag mr-2"></i>@Html.Sitecore().Field("NavigationTitle", x)</a>
+                                    <a class="nav-link" href="@z"><i class="fab fa-font-awesome-flag mr-2"></i>@Html.Sitecore().Field("NavigationTitle", x)</a>
                                 </li>
                             }
                         }
