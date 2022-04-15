@@ -1,0 +1,53 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+@using Sitecore.Mvc.Helpers
+@using Sitecore.Mvc
+
+
+@model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
+
+@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{
+    <section class="section section-primary text-white">
+        <div class="container-fluid py-3 py-md-4">
+            <div class="row">
+                <div class="col-12 col-md-auto text-center mt-3 mt-md-4">
+                    <i class="fas fa-id-badge fa-15x"></i>
+                </div>
+                <div class="col-12 col-md mt-3 mt-md-4">
+                    <h1 class="display mb-4">Nome Cognome</h1>
+                    <p><span class="label text-white">Etichetta:</span>Lorem ipsum dolor sit amet, consectetur adipisci elit</p>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-xl-4">
+                            <p><span class="label text-white">Etichetta:</span>Lorem ipsum</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-4">
+                            <p><span class="label text-white">Etichetta:</span>Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-auto text-center mt-3 mt-md-4">
+                    <a href="" class="btn btn-default">
+                        <i class="fab fa-skype mr-2"></i>Contatta<span class="sr-only">su Skype</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    @*<div class="component-content">
+            @if (Model.DataSourceItem == null)
+            {
+            @Model.MessageIsEmpty
+            }
+            else
+            {
+            foreach (BaseVariantField variantField in Model.VariantFields)
+            {
+            @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+            }
+            }
+        </div>*@
+}
