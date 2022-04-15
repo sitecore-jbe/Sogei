@@ -56,21 +56,21 @@
                                     active = "active";
                                 }
                             }
-                            <a class="nav-link @active" href="template-siti-home-alt.html">@Html.Sitecore().Field("NavigationTitle", mainItem)</a>
+                            <a class="nav-link @active" href="template-siti-home-alt.html">@Html.Raw(Html.Sitecore().Field("NavigationTitle", mainItem))</a>
                         </li>
                         @{
                             if (mainItem != null)
                             {
                                 foreach (Sitecore.Data.Items.Item subItem in mainItem.Children)
                                 {
-                                    var z = Sitecore.Links.LinkManager.GetItemUrl(subItem);
+                                    var subItemUrl = Sitecore.Links.LinkManager.GetItemUrl(subItem);
                                     active = "";
                                     if (Sitecore.Context.Item.ID == subItem.ID)
                                     {
                                         active = "active";
                                     }
                                     <li class="nav-item text-md-center" data-active="template-siti-pagina">
-                                        <a class="nav-link @active" href="@z"><i class="fab fa-font-awesome-flag mr-2"></i>@Html.Sitecore().Field("NavigationTitle", subItem)</a>
+                                        <a class="nav-link @active" href="@subItemUrl">@Html.Raw(Html.Sitecore().Field("NavigationTitle", subItem))</a>
                                     </li>
                                 }
                             }
