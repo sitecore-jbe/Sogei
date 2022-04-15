@@ -32,12 +32,16 @@
                         @{
                             Sitecore.Data.Fields.ReferenceField headerHomeItemField = Model.Item.Fields["Header Home Item"];
 
-                            var mainItem = headerHomeItemField.TargetItem != null ? headerHomeItemField.TargetItem : Model.Item;
+                            Sitecore.Data.Items.Item mainItem = headerHomeItemField.TargetItem != null ? headerHomeItemField.TargetItem : Model.Item;
+
+                            @Html.Raw("MainItem : " + mainItem.DisplayName)
                         }
-                            <li class="nav-item text-md-center" data-active="template-siti-home-alt">
-                                <a class="nav-link active" href="template-siti-home-alt.html">@Html.Sitecore().Field("NavigationTitle", mainItem)</a>
-                            </li>
-                            @{
+                        <li class="nav-item text-md-center" data-active="template-siti-home-alt">
+                            <a class="nav-link active" href="template-siti-home-alt.html">@Html.Sitecore().Field("NavigationTitle", mainItem)</a>
+                        </li>
+                        @{
+                            if (mainItem != null)
+                            {
                                 foreach (Sitecore.Data.Items.Item subItem in mainItem.Children)
                                 {
                                     var z = Sitecore.Links.LinkManager.GetItemUrl(subItem);
@@ -46,11 +50,12 @@
                                     </li>
                                 }
                             }
+                        }
 
 
 
 
-                        </ul>
+                    </ul>
                 </div>
             </div>
         </div>
