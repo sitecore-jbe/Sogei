@@ -19,7 +19,7 @@
                     @Html.Sitecore().Field("Logo", Model.Item, new { @class = "logo" })
                 </div>
                 <div class="col">
-                    <h1><span class="sr-only">Informazioni su </span>Denominazione sito</h1>
+                    <h1><span class="sr-only">Informazioni su </span>@Html.Sitecore().Field("Title", Model.Item)</h1>
                 </div>
             </div>
             <div class="row">
