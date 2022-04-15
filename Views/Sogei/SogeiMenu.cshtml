@@ -55,8 +55,10 @@
                                 {
                                     active = "active";
                                 }
+                                var mainItemUrl = Sitecore.Links.LinkManager.GetItemUrl(mainItem);
+
                             }
-                            <a class="nav-link @active" href="template-siti-home-alt.html">@Html.Raw(mainItem.Fields["NavigationTitle"].Value))</a>
+                            <a class="nav-link @active" href="@mainItemUrl">@Html.Raw(mainItem.Fields["NavigationTitle"].Value)</a>
                         </li>
                         @{
                             if (mainItem != null)
