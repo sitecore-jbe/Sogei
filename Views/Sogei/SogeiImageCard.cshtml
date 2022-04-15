@@ -11,16 +11,16 @@
 
 @if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
 {
-    <article class="card card-default card-image border-0 mt-5 shadow">
-        <img class="card-img-top img-circle mt-n5" src="resources/uikit-demo/img/example-square-1.jpg" alt="">
-        <div class="card-body">
-            <h3 class="card-title text-center">Titolo Card</h3>
-            <p>Questa card punta ad una pagina di dettaglio presente nel sito</p>
-        </div>
-        <div class="card-footer text-right">
-            <a href="template-siti-dettaglio.html">Link con icona<i class="fas fa-long-arrow-alt-right ml-2"></i></a>
-        </div>
-    </article>
+<article class="card card-default card-image border-0 mt-5 shadow">
+    @Html.Sitecore().Field("Image", Model.Item, new { @class = "card-img-top img-circle mt-n5" })
+    <div class="card-body">
+        <h3 class="card-title text-center">@Html.Sitecore().Field("Title", Model.Item)</h3>
+        <p>@Html.Sitecore().Field("Intro", Model.Item)</p>
+    </div>
+    <div class="card-footer text-right">
+        @Html.Sitecore().Field("Link", Model.Item)
+    </div>
+</article>
     @*<div class="component-content">
             @if (Model.DataSourceItem == null)
             {
