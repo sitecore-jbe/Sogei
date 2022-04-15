@@ -51,7 +51,8 @@
                         <li class="nav-item text-md-center" data-active="template-siti-home-alt">
                             @{
                                 var active = "";
-                                if (Model.DataSourceItem.ID == mainItem.ID)
+                                @Html.Raw("Sitecore.Context.Item.ID:" + Sitecore.Context.Item.ID + "=?=" + "mainItem:" + mainItem.ID)
+                                if (Sitecore.Context.Item.ID == mainItem.ID)
                                 {
                                     active = "active";
                                 }
@@ -65,7 +66,8 @@
                                 {
                                     var z = Sitecore.Links.LinkManager.GetItemUrl(subItem);
                                     active = "";
-                                    if (Model.Item.ID == subItem.ID)
+                                    @Html.Raw("Sitecore.Context.Item.ID:" + Sitecore.Context.Item.ID + "=?=" + "subItemID:" + subItem.ID)
+                                    if (Sitecore.Context.Item.ID == subItem.ID)
                                     {
                                         active = "active";
                                     }
