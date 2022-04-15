@@ -31,18 +31,18 @@
             </div>
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    <h2>Recapiti e contatti</h2>
+                    <h2>@Sitecore.Globalization.Translate.Text("Contact details and contacts")</h2>
                     <hr>
                     <div class="row">
                         <div class="col-12 col-sm">
                             <p>
-                                Recapiti:
+                                @Sitecore.Globalization.Translate.Text("Street address"):
                                 <br><span class="text-white">@Html.Sitecore().Field("Street address", Model.Item)</span>
                             </p>
                         </div>
                         <div class="col-12 col-sm">
                             <p>
-                                Contatti:
+                                @Sitecore.Globalization.Translate.Text("Contacts"):
                                 <br><a href="mailto:">@Html.Sitecore().Field("Email", Model.Item)</a>
                             </p>
                         </div>
