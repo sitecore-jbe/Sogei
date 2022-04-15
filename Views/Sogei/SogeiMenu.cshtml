@@ -30,18 +30,18 @@
                     </form>
                     <ul class="navbar-nav align-items-md-end py-md-1 mr-auto">
                         <li class="nav-item text-md-center" data-active="template-siti-home-alt">
-                            <a class="nav-link active" href="template-siti-home-alt.html">Home</a>
+                            <a class="nav-link active" href="template-siti-home-alt.html">@Html.Sitecore().Field("NavigationTitle", Model.Item)</a>
                         </li>
-                        <li class="nav-item text-md-center" data-active="template-siti-pagina">
-                            <a class="nav-link" href="template-siti-pagina.html"><i class="fab fa-font-awesome-flag mr-2"></i>Pagina 1 - pagina generica</a>
-                        </li>
-                        <!-- Voce con menu -->
-                        <li class="nav-item text-md-center dropdown" data-active="template-siti-dettaglio">
-                            <a class="nav-link" href="template-siti-dettaglio.html">
-                                Pagina 2 - dettaglio scheda
-                            </a>
+                        @{
+                            foreach (var x in Model.Item.Children())
+                            {
+                                <li class="nav-item text-md-center" data-active="template-siti-pagina">
+                                  <a class="nav-link" href="@Sitecore.Links.LinkManager.GetItemUrl(x);"><i class="fab fa-font-awesome-flag mr-2"></i>@Html.Sitecore().Field("NavigationTitle", x)</a>
+                                </li>
+                            }
+                        }
 
-                        </li>
+                        
 
 
                     </ul>
