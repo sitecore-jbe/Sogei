@@ -36,8 +36,12 @@
 
                             if (headerHomeItemField != null)
                             {
+                                @Html.Raw("headerHomeItemField is not null");
+
                                 if (headerHomeItemField.TargetItem != null)
                                 {
+                                    @Html.Raw("headerHomeItemField.TargetItem is not null");
+
                                     mainItem = headerHomeItemField.TargetItem;
                                 }
                             }
