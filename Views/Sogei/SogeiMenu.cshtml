@@ -44,6 +44,14 @@
 
                                     mainItem = headerHomeItemField.TargetItem;
                                 }
+                                else
+                                {
+                                    @Html.Raw("headerHomeItemField.TargetItem is  null");
+                                }
+                            }
+                            else
+                            {
+                                @Html.Raw("headerHomeItemField is  null");
                             }
 
                             @Html.Raw("MainItem : " + mainItem.DisplayName)
