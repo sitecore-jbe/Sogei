@@ -30,7 +30,7 @@
                     </form>
                     <ul class="navbar-nav align-items-md-end py-md-1 mr-auto">
                         @{
-                            Sitecore.Data.Fields.ReferenceField headerHomeItemField = Model.Item.Fields["Header Home Item"];
+                            Sitecore.Data.Fields.ReferenceField headerHomeItemField = Model.DataSourceItem.Fields["Header Home Item"];
 
                             Sitecore.Data.Items.Item mainItem = Model.Item;
 
