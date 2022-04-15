@@ -32,7 +32,7 @@
                         @{
                             Sitecore.Data.Fields.ReferenceField headerHomeItemField = Model.Item.Fields["Header Home Item"];
 
-                            var Sitecore.Data.Items.Item mainItem = Model.Item;
+                            Sitecore.Data.Items.Item mainItem = Model.Item;
 
                             if (headerHomeItemField != null)
                             {
@@ -42,7 +42,7 @@
                                 }
                             }
 
-                            @Html.Raw("MainItem : " + mainItem.DisplayName())
+                            @Html.Raw("MainItem : " + mainItem.DisplayName)
                         }
                         <li class="nav-item text-md-center" data-active="template-siti-home-alt">
                             <a class="nav-link active" href="template-siti-home-alt.html">@Html.Sitecore().Field("NavigationTitle", mainItem)</a>
