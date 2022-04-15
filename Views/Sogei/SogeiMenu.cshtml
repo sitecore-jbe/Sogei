@@ -33,7 +33,7 @@
                             <a class="nav-link active" href="template-siti-home-alt.html">@Html.Sitecore().Field("NavigationTitle", Model.Item)</a>
                         </li>
                         @{
-                            foreach (Item x in Model.Item.Children)
+                            foreach (var x in Model.Item.Children)
                             {                                
                                 //var z = Sitecore.Links.LinkManager.GetItemUrl(x);
                                 <li class="nav-item text-md-center" data-active="template-siti-pagina">
