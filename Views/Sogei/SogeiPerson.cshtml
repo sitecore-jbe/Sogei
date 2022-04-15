@@ -18,14 +18,14 @@
                     <i class="fas fa-id-badge fa-15x"></i>
                 </div>
                 <div class="col-12 col-md mt-3 mt-md-4">
-                    <h1 class="display mb-4">Nome Cognome</h1>
-                    <p><span class="label text-white">Etichetta:</span>Lorem ipsum dolor sit amet, consectetur adipisci elit</p>
+                    <h1 class="display mb-4">@Html.Sitecore().Field("Firstname", Model.Item) @Html.Sitecore().Field("Lastname", Model.Item)</h1>
+                    <p><span class="label text-white">Etichetta:</span>@Html.Sitecore().Field("Label 1", Model.Item)</p>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-xl-4">
-                            <p><span class="label text-white">Etichetta:</span>Lorem ipsum</p>
+                            <p><span class="label text-white">Etichetta:</span>@Html.Sitecore().Field("Label 2", Model.Item)</p>
                         </div>
                         <div class="col-12 col-sm-6 col-xl-4">
-                            <p><span class="label text-white">Etichetta:</span>Lorem ipsum dolor sit amet</p>
+                            <p><span class="label text-white">Etichetta:</span>@Html.Sitecore().Field("Label 3", Model.Item)t</p>
                         </div>
                     </div>
                 </div>
