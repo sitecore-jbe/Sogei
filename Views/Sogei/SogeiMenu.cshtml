@@ -56,7 +56,7 @@
                                     active = "active";
                                 }
                             }
-                            <a class="nav-link @active" href="template-siti-home-alt.html">@Html.Raw(Html.Sitecore().Field("NavigationTitle", mainItem))</a>
+                            <a class="nav-link @active" href="template-siti-home-alt.html">@Html.Raw(mainItem.Fields["NavigationTitle"].Value))</a>
                         </li>
                         @{
                             if (mainItem != null)
@@ -70,7 +70,7 @@
                                         active = "active";
                                     }
                                     <li class="nav-item text-md-center" data-active="template-siti-pagina">
-                                        <a class="nav-link @active" href="@subItemUrl">@Html.Raw(Html.Sitecore().Field("NavigationTitle", subItem))</a>
+                                        <a class="nav-link @active" href="@subItemUrl">@Html.Raw(subItem.Fields["NavigationTitle"].Value)</a>
                                     </li>
                                 }
                             }
