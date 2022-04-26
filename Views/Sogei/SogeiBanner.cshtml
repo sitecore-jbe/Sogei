@@ -9,37 +9,45 @@
 
 @model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
 
-@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
-{
-    <section class="section section-bg-img">
-        <div class="container-fluid py-3 py-md-4">
-            <div class="row my-5">
-                <div class="col-12 col-md-5">
-                    <h1>@Html.Sitecore().Field("Title", Model.Item)</h1>
-                </div>
-                <div class="col-12 col-md-7">
-                    <div class="card card-bg-over border-0 my-2 shadow">
-                        <div class="card-body">
-                            <p class="h4">@Html.Sitecore().Field("Sub Title", Model.Item)</p>
-                            <p>@Html.Sitecore().Field("Intro", Model.Item)</p>
-                            @Html.Sitecore().Field("Link", Model.Item, new { @class = "btn btn-primary btn-lg mt-3" })
-                        </div>
+
+<section class="section section-bg-img">
+    <div class="container-fluid py-3 py-md-4">
+        <div class="row my-5">
+            <div class="col-12 col-md-5">
+                <h1>@Html.Sitecore().Field("Title", Model.Item)</h1>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="card card-bg-over border-0 my-2 shadow">
+                    <div class="card-body">
+                        <p class="h4">@Html.Sitecore().Field("Sub Title", Model.Item)</p>
+                        <p>@Html.Sitecore().Field("Intro", Model.Item)</p>
+                        @{
+                            if (Model.DataSourceItem != null)
+                            {
+                                var subItemUrl = Sitecore.Links.LinkManager.GetItemUrl(Model.Item);
+                                <a href="" class="btn btn-primary btn-lg mt-3">Scopri di più</a>
+                            }
+                            else
+                            {
+                                @Html.Sitecore().Field("Link", Model.Item, new { @class = "btn btn-primary btn-lg mt-3" })
+                            }
+                        }
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    @*<div class="component-content">
-            @if (Model.DataSourceItem == null)
+    </div>
+</section>
+@*<div class="component-content">
+        @if (Model.DataSourceItem == null)
+        {
+            @Model.MessageIsEmpty
+        }
+        else
+        {
+            foreach (BaseVariantField variantField in Model.VariantFields)
             {
-                @Model.MessageIsEmpty
+                @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
             }
-            else
-            {
-                foreach (BaseVariantField variantField in Model.VariantFields)
-                {
-                    @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
-                }
-            }
-        </div>*@
-}
+        }
+    </div>*@
