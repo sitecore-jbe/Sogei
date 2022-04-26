@@ -13,7 +13,7 @@
 {
     <section class="section section-grey">
         <div class="container-fluid py-3 py-md-4">
-            <h2>Titolo sezione</h2>
+            <h2>@Html.Sitecore().Field("Title", Model.Item)</h2>
             <div class="bg-white p-3 mb-3 shadow">
                 <ul class="nav nav-tabs-reverse flex-column flex-md-row flex-md-nowrap" role="tablist">
                     @if (Model.Item != null)
