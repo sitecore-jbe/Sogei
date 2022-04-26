@@ -19,7 +19,7 @@
                     @if (Model.Item != null)
                     {
                         var counter = 1;
-                        @foreach (Sitecore.Data.Items.Item subItem in Model.Item.Children)
+                        foreach (Sitecore.Data.Items.Item subItem in Model.Item.Children)
                         {
                             var activeclass = "";
                             if (counter == 1)
@@ -38,7 +38,7 @@
                     @if (Model.Item != null)
                     {
                         var counter = 1;
-                        @foreach (Sitecore.Data.Items.Item subItem in Model.Item.Children)
+                        foreach (Sitecore.Data.Items.Item subItem in Model.Item.Children)
                         {
                             var showactiveclass = "";
                             if (counter == 1)
