@@ -28,45 +28,63 @@
                             }
                             <li class="nav-item text-md-center">
                                 <a href="#tab-reverse-@counter" class="nav-link h-100 @activeclass" data-toggle="tab" aria-controls="tab-reverse-@counter" aria-expanded="true" role="tab">
-                                    <i class="fab fa-font-awesome-flag mr-2"></i>@Html.Sitecore().Field("Tab Name", Model.Item)
-                                </a>
-                            </li>
-                        }
-                    }
-                </ul>
-                <div class="tab-content tab-content-reverse">
-                    @if (Model.Item != null)
+                                    <i class="fab fa-font-awesome-flag mr-2"></i>@Html.Raw(@Html.Sitecore().Field("Tab Name", Model.Item))
+</ a >
+
+</ li >
+                                    }
+                            }
+                            </ ul >
+                            < div class="tab-content tab-content-reverse">
+                                @if(Model.Item != null)
                     {
                         var counter = 1;
-                        @foreach (Sitecore.Data.Items.Item subItem in Model.Item.Children)
-                        {
+                        @foreach(Sitecore.Data.Items.Item subItem in Model.Item.Children)
+                                    {
                             var showactiveclass = "";
                             if (counter == 1)
                             {
                                 showactiveclass = "show active";
                             }
-                            <div id="tab-reverse-@counter" class="tab-pane fade @showactiveclass" role="tabpanel">
-                                <h3>@Html.Sitecore().Field("Title", Model.Item)</h3>
-                                @Html.Sitecore().Field("Text", Model.Item)
-                            </div>
-                        }
-                    }
+                                        < div id = "tab-reverse-@counter" class="tab-pane fade @showactiveclass" role="tabpanel">
+                                            <h3>@Html.Sitecore().Field("Title", Model.Item)</h3>
+</div>
+}
+}
+</ul>
+<div class="tab-content tab-content-reverse">
+@if (Model.Item != null)
+{
+var counter = 1;
+@foreach (Sitecore.Data.Items.Item subItem in Model.Item.Children)
+{
+var showactiveclass = "";
+if (counter == 1)
+{
+showactiveclass = "show active";
+}
+<div id="tab-reverse-@counter" class="tab-pane fade @showactiveclass" role="tabpanel">
+<h3>@Html.Sitecore().Field("Title", Model.Item)</h3>
+@Html.Sitecore().Field("Text", Model.Item)
+</div>
+}
+}
 
-                </div>
-            </div>
-        </div>
-    </section>
-    @*<div class="component-content">
-            @if (Model.DataSourceItem == null)
-            {
-            @Model.MessageIsEmpty
-            }
-            else
-            {
-            foreach (BaseVariantField variantField in Model.VariantFields)
-            {
-            @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
-            }
-            }
-        </div>*@
+</ div >
+</ div >
+</ div >
+</ section >
+                                @*<div class="component-content">
+        @if (Model.DataSourceItem == null)
+        {
+        @Model.MessageIsEmpty
+        }
+        else
+        {
+        foreach (BaseVariantField variantField in Model.VariantFields)
+        {
+        @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+        }
+        }
+    </div>*@
 }
