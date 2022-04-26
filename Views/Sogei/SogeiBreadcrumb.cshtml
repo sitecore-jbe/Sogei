@@ -11,39 +11,43 @@
 
 @if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
 {
-    <div class="row">
-        <div class="col-12 col-md-auto order-md-2 btn-rounded text-right mt-md-2">
-            <a href="" title="Stampa la pagina" class="btn btn-primary ml-2"><i class="fas fa-print"></i></a>
-            <a href="" title="Condividi la pagina" class="btn btn-primary ml-2"><i class="fas fa-share-alt"></i></a>
-            <a href="" title="Aggiungi la pagina ai preferiti" class="btn btn-primary ml-2"><i class="fas fa-star"></i></a>
-        </div>
-        <div class="col-12 col-md order-md-1">
-            <p class="breadcrumb-title">@Sitecore.Globalization.Translate.Text("You are in"):</p>
-            <ol class="breadcrumb">
-                @{
-                    List<Sitecore.Data.Items.Item> ancestors = Model.Item.Axes.GetAncestors().ToList();
-                    foreach (var item in ancestors)
-                    {
-                        var itemUrl = Sitecore.Links.LinkManager.GetItemUrl(item);
+    <div class="container-fluid py-3 py-md-4">
 
-                        if (Model.Item.ID == item.ID)
+        <div class="row">
+            <div class="col-12 col-md-auto order-md-2 btn-rounded text-right mt-md-2">
+                <a href="" title="Stampa la pagina" class="btn btn-primary ml-2"><i class="fas fa-print"></i></a>
+                <a href="" title="Condividi la pagina" class="btn btn-primary ml-2"><i class="fas fa-share-alt"></i></a>
+                <a href="" title="Aggiungi la pagina ai preferiti" class="btn btn-primary ml-2"><i class="fas fa-star"></i></a>
+            </div>
+            <div class="col-12 col-md order-md-1">
+                <p class="breadcrumb-title">@Sitecore.Globalization.Translate.Text("You are in"):</p>
+                <ol class="breadcrumb">
+                    @{
+                        List<Sitecore.Data.Items.Item> ancestors = Model.Item.Axes.GetAncestors().ToList();
+                        foreach (var item in ancestors)
                         {
-                            <li class="breadcrumb-item"><strong>@Html.Sitecore().Field("NavigationTitle", item, new { text = item.DisplayName })</strong></li>
-                        }
-                        else
-                        {
-                            <li class="breadcrumb-item"><a href="@itemUrl">@Html.Sitecore().Field("NavigationTitle", item, new { text = item.DisplayName })</a></li>
-                        }
+                            var itemUrl = Sitecore.Links.LinkManager.GetItemUrl(item);
 
-                        if (item.ID == new Sitecore.Data.ID("{D0CB8013-D3F6-42AE-9164-7D55D2833FA2}") )
-                        {
-                            return;
+                            if (Model.Item.ID == item.ID)
+                            {
+                                <li class="breadcrumb-item"><strong>@Html.Sitecore().Field("NavigationTitle", item, new { text = item.DisplayName })</strong></li>
+                            }
+                            else
+                            {
+                                <li class="breadcrumb-item"><a href="@itemUrl">@Html.Sitecore().Field("NavigationTitle", item, new { text = item.DisplayName })</a></li>
+                            }
+
+                            if (item.ID == new Sitecore.Data.ID("{D0CB8013-D3F6-42AE-9164-7D55D2833FA2}"))
+                            {
+                                return;
+                            }
                         }
                     }
-                }
-            </ol>
+                </ol>
+            </div>
         </div>
     </div>
+
     @*<div class="component-content">
             @if (Model.DataSourceItem == null)
             {
