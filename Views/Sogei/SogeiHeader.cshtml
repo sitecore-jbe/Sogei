@@ -22,8 +22,22 @@
                     <div class="col col-md-auto text-right">
                         <span class="sr-only">Lingue disponibili:</span>
                         <ul class="list-inline language">
-                            <li class="list-inline-item active"><a href="?sc_lang=it-IT" class="btn border-0 py-1">ITA<span class="sr-only"> italiano</span></a></li>
-                            <li class="list-inline-item"><a lang="en" href="?sc_lang=en" class="btn border-0 py-1">ENG<span class="sr-only"> english</span></a></li>
+                            @if (Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName.ToLower() == "it")
+                            {
+                                <li class="list-inline-item active"><a href="?sc_lang=it-IT" class="btn border-0 py-1">ITA<span class="sr-only"> italiano</span></a></li>
+                            }
+                            else
+                            {
+                                <li class="list-inline-item"><a href="?sc_lang=it-IT" class="btn border-0 py-1">ITA<span class="sr-only"> italiano</span></a></li>
+                            }
+                            @if (Sitecore.Context.Language.CultureInfo.TwoLetterISOLanguageName.ToLower() == "en")
+                            {
+                                <li class="list-inline-item active"><a lang="en" href="?sc_lang=en" class="btn border-0 py-1">ENG<span class="sr-only"> english</span></a></li>
+                            }
+                            else
+                            {
+                                <li class="list-inline-item"><a lang="en" href="?sc_lang=en" class="btn border-0 py-1">ENG<span class="sr-only"> english</span></a></li>
+                            }
                         </ul>
                     </div>
                 </div>
