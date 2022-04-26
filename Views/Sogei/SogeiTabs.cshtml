@@ -1,0 +1,74 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+@using Sitecore.Mvc.Helpers
+@using Sitecore.Mvc
+
+
+@model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
+
+@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{
+    <section class="section section-grey">
+        <div class="container-fluid py-3 py-md-4">
+            <h2>Titolo sezione</h2>
+            <div class="bg-white p-3 mb-3 shadow">
+                <ul class="nav nav-tabs-reverse flex-column flex-md-row flex-md-nowrap" role="tablist">
+                    <li class="nav-item text-md-center">
+                        <a href="#tab-reverse-1" class="nav-link h-100 active" data-toggle="tab" aria-controls="tab-reverse-1" aria-expanded="true" role="tab">
+                            <i class="fab fa-font-awesome-flag mr-2"></i>Sezione 1
+                        </a>
+                    </li>
+                    <li class="nav-item text-md-center">
+                        <a href="#tab-reverse-2" class="nav-link h-100" data-toggle="tab" aria-controls="tab-reverse-2" aria-expanded="false" role="tab">
+                            <i class="fab fa-font-awesome-flag mr-2"></i>Sezione 2
+                        </a>
+                    </li>
+                    <li class="nav-item text-md-center">
+                        <a href="#tab-reverse-3" class="nav-link h-100" data-toggle="tab" aria-controls="tab-reverse-3" aria-expanded="false" role="tab">
+                            <i class="fab fa-font-awesome-flag mr-2"></i>Sezione 3
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content tab-content-reverse">
+                    <div id="tab-reverse-1" class="tab-pane fade show active" role="tabpanel">
+                        <h3>Sezione 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br />Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+                    </div>
+                    <div id="tab-reverse-2" class="tab-pane fade" role="tabpanel">
+                        <h3>Sezione 2</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br />Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+                    </div>
+                    <div id="tab-reverse-3" class="tab-pane fade" role="tabpanel">
+                        <h3>Sezione 3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                            <br />Ut enim ad minim veniam, quis nostrum exercitationem ullamco laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @*<div class="component-content">
+            @if (Model.DataSourceItem == null)
+            {
+            @Model.MessageIsEmpty
+            }
+            else
+            {
+            foreach (BaseVariantField variantField in Model.VariantFields)
+            {
+            @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+            }
+            }
+        </div>*@
+}
