@@ -34,6 +34,11 @@
                         {
                             <li class="breadcrumb-item"><a href="@itemUrl">@Html.Sitecore().Field("NavigationTitle", item, new { text = item.DisplayName })</a></li>
                         }
+
+                        if (item.ID == new Sitecore.Data.ID("{D0CB8013-D3F6-42AE-9164-7D55D2833FA2}") )
+                        {
+                            return;
+                        }
                     }
                 }
             </ol>
