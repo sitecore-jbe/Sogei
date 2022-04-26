@@ -28,8 +28,8 @@
 
                         while (parentitem.ID != new Sitecore.Data.ID("{D0CB8013-D3F6-42AE-9164-7D55D2833FA2}"))
                         {
-                            ancestors.Add(Model.Item.Parent);
-                            parentitem = Model.Item.Parent;
+                            ancestors.Add(parentitem.Parent);
+                            parentitem = parentitem.Parent;
                         }
 
                         ancestors.Reverse();
