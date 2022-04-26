@@ -22,7 +22,18 @@
                 <p class="breadcrumb-title">@Sitecore.Globalization.Translate.Text("You are in"):</p>
                 <ol class="breadcrumb">
                     @{
-                        List<Sitecore.Data.Items.Item> ancestors = Model.Item.Axes.GetAncestors().ToList();
+                        List<Sitecore.Data.Items.Item> ancestors = new List<Sitecore.Data.Items.Item>();
+                        ancestors.Add(Model.Item);
+                        var parentitem = Model.Item.Parent;
+
+                        while (parentitem.ID != new Sitecore.Data.ID("{D0CB8013-D3F6-42AE-9164-7D55D2833FA2}"))
+                        {
+                            ancestors.Add(Model.Item);
+                            parentitem = Model.Item.Parent;
+                        }
+
+                        ancestors.Reverse();
+
                         foreach (var item in ancestors)
                         {
                             var itemUrl = Sitecore.Links.LinkManager.GetItemUrl(item);
@@ -36,25 +47,25 @@
                                 <li class="breadcrumb-item"><a href="@itemUrl">@Html.Sitecore().Field("NavigationTitle", item, new { text = item.DisplayName })</a></li>
                             }
 
-                            
                         }
-                    }
-                </ol>
+
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
+        </div>
 
-    @*<div class="component-content">
-            @if (Model.DataSourceItem == null)
-            {
-            @Model.MessageIsEmpty
-            }
-            else
-            {
-            foreach (BaseVariantField variantField in Model.VariantFields)
-            {
-            @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
-            }
-            }
-        </div>*@
-}
+        @*<div class="component-content">
+                @if (Model.DataSourceItem == null)
+                {
+                @Model.MessageIsEmpty
+                }
+                else
+                {
+                foreach (BaseVariantField variantField in Model.VariantFields)
+                {
+                @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+                }
+                }
+            </div>*@
+                    }
