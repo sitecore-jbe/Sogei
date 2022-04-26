@@ -48,24 +48,24 @@
                             }
 
                         }
+                    }
 
-                    </ol>
-                </div>
+                </ol>
             </div>
         </div>
-        </div>
+    </div>
 
-        @*<div class="component-content">
-                @if (Model.DataSourceItem == null)
-                {
-                @Model.MessageIsEmpty
-                }
-                else
-                {
-                foreach (BaseVariantField variantField in Model.VariantFields)
-                {
-                @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
-                }
-                }
-            </div>*@
-                    }
+    @*<div class="component-content">
+            @if (Model.DataSourceItem == null)
+            {
+            @Model.MessageIsEmpty
+            }
+            else
+            {
+            foreach (BaseVariantField variantField in Model.VariantFields)
+            {
+            @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+            }
+            }
+        </div>*@
+}
