@@ -1,0 +1,47 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Extensions
+@using Sitecore.XA.Foundation.RenderingVariants.Fields
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@using Sitecore.XA.Foundation.Variants.Abstractions.Fields
+@using Sitecore.Mvc.Helpers
+@using Sitecore.Mvc
+
+
+@model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
+
+@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{
+    <div class="col-12 col-md order-md-1">
+        <p class="breadcrumb-title">@Sitecore.Globalization.Translate.Text("Ti trovi in"):</p>
+        <ol class="breadcrumb">
+            @{
+                List<Sitecore.Data.Items.Item> ancestors = Model.Item.Axes.GetAncestors().ToList();
+                foreach (var item in ancestors)
+                {
+                    if (Model.Item.ID == item.ID)
+                    {
+                        <li class="breadcrumb-item"><a href=""><strong>@Html.Sitecore().Field("NavigationTitle", Model.Item)</strong></a></li>
+                    }
+                    else
+                    {
+                        <li class="breadcrumb-item"><a href="">@Html.Sitecore().Field("NavigationTitle", Model.Item)</a></li>
+
+                    }
+                }
+            }
+        </ol>
+    </div>
+    @*<div class="component-content">
+            @if (Model.DataSourceItem == null)
+            {
+            @Model.MessageIsEmpty
+            }
+            else
+            {
+            foreach (BaseVariantField variantField in Model.VariantFields)
+            {
+            @Html.RenderingVariants().RenderVariant(variantField, Model.Item, Model.RenderingWebEditingParams, Model)
+            }
+            }
+        </div>*@
+}
