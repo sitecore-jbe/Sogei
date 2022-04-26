@@ -24,13 +24,15 @@
                     List<Sitecore.Data.Items.Item> ancestors = Model.Item.Axes.GetAncestors().ToList();
                     foreach (var item in ancestors)
                     {
+                        var itemUrl = Sitecore.Links.LinkManager.GetItemUrl(item);
+
                         if (Model.Item.ID == item.ID)
                         {
-                            <li class="breadcrumb-item"><a href=""><strong>@Html.Sitecore().Field("NavigationTitle", item)</strong></a></li>
+                            <li class="breadcrumb-item"><a href="@itemUrl"><strong>@Html.Sitecore().Field("NavigationTitle", item)</strong></a></li>
                         }
                         else
                         {
-                            <li class="breadcrumb-item"><a href="">@Html.Sitecore().Field("NavigationTitle", iItem)</a></li>
+                            <li class="breadcrumb-item"><a href="@itemUrl">@Html.Sitecore().Field("NavigationTitle", iItem)</a></li>
                         }
                     }
                 }
