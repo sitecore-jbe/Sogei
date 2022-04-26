@@ -28,11 +28,11 @@
 
                         if (Model.Item.ID == item.ID)
                         {
-                            <li class="breadcrumb-item"><a href="@itemUrl"><strong>@Html.Sitecore().Field("NavigationTitle", item)</strong></a></li>
+                            <li class="breadcrumb-item"><strong>@Html.Sitecore().Field("NavigationTitle", item, new { text = item.DisplayName })</strong></li>
                         }
                         else
                         {
-                            <li class="breadcrumb-item"><a href="@itemUrl">@Html.Sitecore().Field("NavigationTitle", item)</a></li>
+                            <li class="breadcrumb-item"><a href="@itemUrl">@Html.Sitecore().Field("NavigationTitle", item, new { text = item.DisplayName })</a></li>
                         }
                     }
                 }
