@@ -9,8 +9,8 @@
 
 @model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
 
-@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
-{
+@*@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{*@
     <div class="card card-simple px-3 shadow">
         <div class="card-body">
             <h3 class="card-title">@Html.Sitecore().Field("Title", Model.Item)</h3>
@@ -44,4 +44,4 @@
             }
             }
         </div>*@
-}
+@*}*@

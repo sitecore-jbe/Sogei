@@ -9,8 +9,8 @@
 
 @model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
 
-@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
-{
+@*@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{*@
 <article class="card card-default card-image border-0 mt-5 shadow">
     @Html.Sitecore().Field("Image", Model.Item, new { @class = "card-img-top img-circle mt-n5" })
     <div class="card-body">
@@ -34,4 +34,4 @@
             }
             }
         </div>*@
-}
+@*}*@
