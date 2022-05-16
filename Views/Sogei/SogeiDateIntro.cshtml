@@ -9,8 +9,8 @@
 
 @model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
 
-@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
-{
+@*@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{*@
     <span class="text-muted"><i class="far fa-calendar-alt mr-2"></i>@Html.Sitecore().Field("Date", Model.Item, new { format = "MMM dd, yyyy" })</span>
     <p>
         @Html.Sitecore().Field("Intro", Model.Item)
@@ -29,4 +29,4 @@
             }
             }
         </div>*@
-}
+@*}*@
