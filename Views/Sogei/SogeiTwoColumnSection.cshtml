@@ -9,17 +9,17 @@
 
 @model Sitecore.XA.Foundation.Variants.Abstractions.Models.VariantsRenderingModel
 
-@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
-{
+@*@if (Model.DataSourceItem != null || Html.Sxa().IsEdit)
+{*@
     <section class="section section-primary section-bg-bottom">
         <div class="container-fluid py-3 py-md-4">
             <h2>Titolo sezione</h2>
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex">
-                    @Html.Sitecore().Placeholder("two-column-section-left")
+                    @Html.Sitecore().Placeholder("left-column")
                 </div>
                 <div class="col-12 col-lg-6 d-flex">
-                    @Html.Sitecore().Placeholder("two-column-section-right")
+                    @Html.Sitecore().Placeholder("right-column")
                 </div>
             </div>
         </div>
@@ -37,4 +37,4 @@
             }
             }
         </div>*@
-}
+@*}*@
