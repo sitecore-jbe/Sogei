@@ -88,8 +88,24 @@
                                     {
                                         active = "active";
                                     }
+
                                     <li class="nav-item text-md-center" data-active="template-siti-pagina">
-                                        <a class="nav-link @active" href="@subItemUrl">@Html.Raw(subItem.Fields["NavigationTitle"].Value)</a>
+
+                                        @if (subItem.Fields["NavigationTitle"] != null)
+                                        {
+                                            <a class="nav-link @active" href="@subItemUrl">@Html.Raw(subItem.Fields["NavigationTitle"].Value)</a>
+                                        }
+                                        else
+                                        {
+                                            if (subItem.DisplayName != null)
+                                            {
+                                                <a class="nav-link @active" href="@mainItemUrl">@Html.Raw(subItem.DisplayName)</a>
+                                            }
+                                            else
+                                            {
+                                                <a class="nav-link @active" href="@mainItemUrl">@Html.Raw(subItem.Name)</a>
+                                            }
+                                        }
                                     </li>
                                 }
                             }
