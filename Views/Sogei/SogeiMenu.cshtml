@@ -58,7 +58,7 @@
                                 var mainItemUrl = Sitecore.Links.LinkManager.GetItemUrl(mainItem);
 
                             }
-                            <a class="nav-link @active" href="@mainItemUrl">@Html.Raw(mainItem.Fields["NavigationTitle"].Value)</a>
+                            <a class="nav-link @active" href="@mainItemUrl">@Html.Raw(mainItem?.Fields["NavigationTitle"]?.Value)</a>
                         </li>
                         @{
                             if (mainItem != null)
@@ -72,7 +72,7 @@
                                         active = "active";
                                     }
                                     <li class="nav-item text-md-center" data-active="template-siti-pagina">
-                                        <a class="nav-link @active" href="@subItemUrl">@Html.Raw(subItem.Fields["NavigationTitle"].Value)</a>
+                                        <a class="nav-link @active" href="@subItemUrl">@Html.Raw(subItem?.Fields["NavigationTitle"]?.Value)</a>
                                     </li>
                                 }
                             }
