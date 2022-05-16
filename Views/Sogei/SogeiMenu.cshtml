@@ -59,8 +59,11 @@
 
                             }
                             @if (mainItem != null)
-                            { 
-                                <a class="nav-link @active" href="@mainItemUrl">@Html.Raw(mainItem.Fields["NavigationTitle"].Value)</a>
+                            {
+                                if (mainItem.Fields["NavigationTitle"] != null)
+                                {
+                                    <a class="nav-link @active" href="@mainItemUrl">@Html.Raw(mainItem.Fields["NavigationTitle"].Value)</a>
+                                }
                             }
                         </li>
                         @{
