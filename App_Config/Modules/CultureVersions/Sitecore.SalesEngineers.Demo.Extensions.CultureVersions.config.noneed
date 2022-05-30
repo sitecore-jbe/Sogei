@@ -1,5 +1,5 @@
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
+  <sitecore role:require="Standalone or ContentManagement">
     <commands>
       <command name="ribbon:copyfields" type="Sitecore.SalesEngineers.Demo.Extensions.CultureVersions.Shell.Framework.Commands.Ribbon.CopyFieldsRibbonCommand, Sitecore.SalesEngineers.Demo.Extensions.CultureVersions"/>
       <command name="ribbon:translatefields" type="Sitecore.SalesEngineers.Demo.Extensions.CultureVersions.Shell.Framework.Commands.Ribbon.TranslateFieldsRibbonCommand, Sitecore.SalesEngineers.Demo.Extensions.CultureVersions"/>
